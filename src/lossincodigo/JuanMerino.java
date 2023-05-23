@@ -36,9 +36,13 @@ public class JuanMerino {
     public static void individual17() {
         // Scanner
         Scanner sc = new Scanner(System.in);
-        // entrada de texto
+
+        /* entrada del texto
+        * puede contener espacios y estos se cuentan como consonantes */
         System.out.println("Ingresa el texto a analizar:");
-        String entrada = sc.next();
+        //String entrada = sc.next()
+        String entrada = sc.nextLine();
+
         // define variables locales
         int cont_vocal = 0;
         int cont_cons = 0;
