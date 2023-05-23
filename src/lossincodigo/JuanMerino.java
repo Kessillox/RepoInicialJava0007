@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class JuanMerino {
 
+    // INDIVIDUAL 15
     public static void individual15() {
         // Scanner
         Scanner sc = new Scanner(System.in);
@@ -38,12 +39,15 @@ public class JuanMerino {
         Scanner sc = new Scanner(System.in);
 
         /* entrada del texto
-        * puede contener espacios y estos se cuentan como consonantes */
-        System.out.println("Ingresa el texto a analizar:");
-        //String entrada = sc.next()
-        String entrada = sc.nextLine();
+        * acepta espacios y caracteres especiales, pero no los cuenta */
+        String entrada;
+        do {
+            System.out.println("Ingresa el texto a analizar:");
+            entrada = sc.nextLine().toLowerCase();
+        } while (entrada.equals(""));
 
-        // define variables locales
+
+        // define variables para conteos
         int cont_vocal = 0;
         int cont_cons = 0;
         String vocales = "aeiou";
@@ -51,11 +55,14 @@ public class JuanMerino {
         // lee letra por letra
         for (char ch: entrada.toCharArray()) {
             System.out.println(ch);
-            if (vocales.contains(Character.toString(ch))) {
-                cont_vocal++;
-            } else {
-                cont_cons++;
+            if (ch >= 'a' && ch <= 'z') {
+                if (vocales.contains(Character.toString(ch))) {
+                    cont_vocal++;
+                } else {
+                    cont_cons++;
+                }
             }
+
         }
 
         // imprime conteo
@@ -63,7 +70,7 @@ public class JuanMerino {
     }
 
     public static void main(String[] args) {
-        // NADA
+        //individual15();
         individual17();
     }
 }
