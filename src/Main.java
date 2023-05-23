@@ -42,7 +42,7 @@ public class Main {
         //los nombres de las Clases, SIEMPRE van con Mayúscula
         //los metodo y funciones son minúscula
 
-    /* *************** Condicionales y Ciclos en Java************** */
+        /* *************** Condicionales y Ciclos en Java************** */
 
         double num3 = Math.random()*100+1;
         System.out.println((int) num3);
