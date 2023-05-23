@@ -7,7 +7,7 @@ public class Main {
 
         //Tipos de Datos
 
-        //Instaciar la variable y definirla
+        //Instanciar la variable y definirla
         //Tipo de dato, nombre de la variable
         int h;
 
