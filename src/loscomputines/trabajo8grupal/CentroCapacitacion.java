@@ -23,7 +23,7 @@ public class CentroCapacitacion {
 
         //Muestra de datos
         //capGeneral.muestraDatos();
-        capGeneral.toString();
+        capGeneral.muestraDatos();
 
         //no me sigue
 
