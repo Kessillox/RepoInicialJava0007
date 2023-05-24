@@ -77,12 +77,12 @@ public class CapacitacionComputines {
         System.out.println("Ingrese Cantidad Asistente");
         asistenteCantidad = scan.nextInt();
 
-        //pude salir del bucle, pero no puedo hacer que el DO WHILE me repita hasta que sea mayor a 0
+        //solucionado
         if (asistenteCantidad <= 0){
             do {
                 System.out.println("Numero de cantidad de asistente invalida, por favor ingrese numero valido");
                 asistenteCantidad = scan.nextInt();
-            }while (asistenteCantidad > 0);
+            }while (asistenteCantidad <= 0);
         };
 
 
