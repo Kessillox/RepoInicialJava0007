@@ -3,6 +3,12 @@ package techtitans;
 import java.util.Scanner;
 import java.lang.System;
 
+
+
+// Cintia Muñoz
+// Hans Schiess
+// Joaquin Baeza
+// Oscar Fernandez
 public class CapacitacionesTechT {
     public static void main(String[] args) {
 
