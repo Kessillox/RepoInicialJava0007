@@ -18,24 +18,26 @@ public class ValentinUrrea {
             }
         } while (cadena.equals(""));
 
+        cadena= cadena.toLowerCase();
+
         for (int i = 0; i < cadena.length(); i++) {
             System.out.print("[" + cadena.charAt(i) + "]");
-            switch (cadena.charAt(i)) {
-                case ' ':
-                    break;
+            if (Character.isLetter(cadena.charAt(i))) {
+                switch (cadena.charAt(i)) {
+                    case 'a',
+                            'e',
+                            'i',
+                            'o',
+                            'u':
+                        vocales ++;
+                        break;
 
-                case 'a',
-                        'e',
-                        'i',
-                        'o',
-                        'u':
-                    vocales ++;
-                    break;
-
-                default:
-                    consonante ++;
-                    break;
+                    default:
+                        consonante ++;
+                        break;
+                }
             }
+
         }
         System.out.println("");
         System.out.println("Vocales: " + vocales);
