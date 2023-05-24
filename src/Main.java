@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -49,8 +52,24 @@ public class Main {
 
         if (num3<=5){
             System.out.println("Entramos al if, porque num3 es menor que 5");
-
         }
+
+        /* ************** Arrays * ***************** */
+
+        ArrayList edad = new ArrayList<>();
+
+        edad.add(8);
+        edad.add("hola");
+
+        ArrayList<Integer> inte = new ArrayList<>();
+        inte.add(3);
+
+        //prueba
+
+        int sol = 23;
+        ArrayList curso = new ArrayList<>();
+
+
 
     }
 }

@@ -46,7 +46,6 @@ public class JuanMerino {
             entrada = sc.nextLine().toLowerCase();
         } while (entrada.equals(""));
 
-
         // define variables para conteos
         int cont_vocal = 0;
         int cont_cons = 0;
