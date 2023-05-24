@@ -1,8 +1,11 @@
 package nerdsdigital;
 
 import javax.swing.*;
-import java.util.HashMap;
-import java.util.Map;
+
+/*Integrantes: Gonzalo Alonzo
+               Nehemías Muñoz
+               Manuel Pinot
+ */
 
 public class CapacitacionNerds {
 
@@ -63,6 +66,9 @@ public class CapacitacionNerds {
 
         }
         int cantidadAsistentes = 0;
+        int menores25 = 0;
+        int entre26y35 = 0;
+        int mayores35 = 0;
 
         cantidadAsistentes = Integer.parseInt(JOptionPane.showInputDialog("cantidad de asistentes")
         );
@@ -74,20 +80,19 @@ public class CapacitacionNerds {
             }while(nombreAsistente.isBlank());
             do {
                 edadAsistente = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad del asistente"));
+
+                if (edadAsistente <= 25) {
+                    menores25++;
+                } else if (edadAsistente >= 26 && edadAsistente <= 35) {
+                    entre26y35++;
+                } else {
+                    mayores35++;
+                }
             }while (edadAsistente < 18 || edadAsistente > 60);
 
-        }
-        int menores25 = 0;
-        int entre26y35 = 0;
-        int mayores35 = 0;
 
-        if (edadAsistente < 25) {
-            menores25++;
-        } else if (edadAsistente >= 26 && edadAsistente <= 35) {
-            entre26y35++;
-        } else {
-            mayores35++;
         }
+
         System.out.println("Datos de la empresa:");
         System.out.println("RUT: " + rutCliente);
         System.out.println("Nombre: " + nombreCliente);
@@ -99,8 +104,6 @@ public class CapacitacionNerds {
         System.out.println("Día: " + diaCapacitacion);
         System.out.println("Hora: " + horaCapacitacion);
         System.out.println("Cantidad de asistentes: " + cantidadAsistentes);
-        System.out.println("Nombre asistente: " + nombreAsistente);
-        System.out.println("Edad asistente: " + edadAsistente);
         System.out.println("Menores de 25 años: " + menores25);
         System.out.println("Entre 26 y 35 años: " + entre26y35);
         System.out.println("Mayores de 35 años: " + mayores35);
