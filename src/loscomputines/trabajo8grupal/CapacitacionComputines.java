@@ -75,11 +75,21 @@ public class CapacitacionComputines {
         System.out.println("Ingrese Duracion capacitacion en horas");
         duracion = scan.nextInt ();
         System.out.println("Ingrese Cantidad Asistente");
-        asistenteCantidad = scan.nextInt(); scan.nextLine ();
+        asistenteCantidad = scan.nextInt();
 
-        while (asistenteCantidad <= 0)
+        //solucionado
+        if (asistenteCantidad <= 0){
+            do {
+                System.out.println("Numero de cantidad de asistente invalida, por favor ingrese numero valido");
+                asistenteCantidad = scan.nextInt();
+            }while (asistenteCantidad <= 0);
+        };
+
+
+
+        /*while (asistenteCantidad <= 0)
             System.out.println("Deser ser mayor que cero la cantidad de los asistentes. Ingrese nuevamente: ");
-            asistenteCantidad = scan.nextInt(); scan.nextLine();
+            asistenteCantidad = scan.nextInt(); scan.nextLine();*/
 
 
     }
