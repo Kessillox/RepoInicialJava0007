@@ -124,14 +124,14 @@ public class Grupal9Marines {
             }
         }
 
-//		RUT DEL CLIENTE
+//		RUN DEL CLIENTE
         while (true) {
-            System.out.println("Ingrese RUT del Cliente");
+            System.out.println("Ingrese RUN del Cliente");
             input_runCliente = entrada.nextLine();
             if (input_runCliente.matches("[0-9]{7,8}")) {	// ENTRE 7 Y 8 NUMEROS
                 break;
             } else {
-                System.out.println("RUT no válido, ingrese rut sin digito verificador ni guión");
+                System.out.println("RUN no válido, ingrese rut sin digito verificador ni guión");
             }
         }
 
