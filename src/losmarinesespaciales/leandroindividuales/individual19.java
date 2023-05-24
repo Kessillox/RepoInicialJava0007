@@ -27,6 +27,9 @@ public class individual19 {
         String frase = "";
         char caracter = ' ';
 
+        char [] abecedario = new char[] {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+        int contador = 0;
+
         // Creando la variable tipo Scanner
         Scanner entrada = new Scanner(System.in);
         //Mientras la frase esté vacía pedir que se ingrese una frase
@@ -40,24 +43,49 @@ public class individual19 {
 
             if (frase.length() > 0) {
 
-                System.out.println("Lectura caracter por caracter, desplegado en consola del String:");
+                System.out.println("Lectura de la frase caracter por caracter y desplegado en consola:");
                 System.out.println("");
 
-                // Recorro la frase ingresada, cada caracter es almacenado en el array de caracteres y se despliega en pantalla
+                // Recorro la frase ingresada y se despliega en pantalla caracter por caracter
                 for (int i = 0; i < frase.length(); i++) {
                     caracter = frase.charAt(i);
-                    arreglo[i] = frase.charAt(i);
+                    arreglo[i]= frase.charAt(i);
                     System.out.println(caracter);
 
                 }
-
-
-                entrada.close();
-
             }
 
+            System.out.println("");
+            System.out.println("Abecedario y cantidad de veces que se repite la letra:");
+            System.out.println("");
 
+            // Se imprime el abecedario, y la cantidad de veces que se usó la letra
+
+            for (int i=0; i<abecedario.length; i++) {
+                System.out.println(abecedario[i]);
+                for (int j=0; j<arreglo.length;j++) {
+                    if(abecedario[i] == arreglo[j] ) {
+                        contador = contador +1;
+                        System.out.println(abecedario[i] + ": " + contador);
+
+                    } //else System.out.println(abecedario[i]);
+
+                }
+                // Reseteo el contador
+                contador = 0;
+
+            }
         }
+
+
+
+
+
+
+
+
+
+        entrada.close();
     }
 
 }
