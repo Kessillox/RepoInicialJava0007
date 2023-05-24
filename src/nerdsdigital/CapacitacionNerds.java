@@ -77,7 +77,6 @@ public class CapacitacionNerds {
             }while (edadAsistente < 18 || edadAsistente > 60);
 
         }
-        Map<String, Integer> edades = new HashMap<>();
         int menores25 = 0;
         int entre26y35 = 0;
         int mayores35 = 0;
@@ -106,8 +105,5 @@ public class CapacitacionNerds {
         System.out.println("Entre 26 y 35 años: " + entre26y35);
         System.out.println("Mayores de 35 años: " + mayores35);
 
-
     }
 }
-
-
