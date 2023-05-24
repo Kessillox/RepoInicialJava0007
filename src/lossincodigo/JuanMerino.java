@@ -33,7 +33,44 @@ public class JuanMerino {
         System.out.format("RESULTADO: %d", resultado);
     }
 
+    // INDIVIDUAL 17
+    public static void individual17() {
+        // Scanner
+        Scanner sc = new Scanner(System.in);
+
+        /* entrada del texto
+        * acepta espacios y caracteres especiales, pero no los cuenta */
+        String entrada;
+        do {
+            System.out.println("Ingresa el texto a analizar:");
+            entrada = sc.nextLine().toLowerCase();
+        } while (entrada.equals(""));
+
+
+        // define variables para conteos
+        int cont_vocal = 0;
+        int cont_cons = 0;
+        String vocales = "aeiou";
+
+        // lee letra por letra
+        for (char ch: entrada.toCharArray()) {
+            System.out.println(ch);
+            if (ch >= 'a' && ch <= 'z') {
+                if (vocales.contains(Character.toString(ch))) {
+                    cont_vocal++;
+                } else {
+                    cont_cons++;
+                }
+            }
+
+        }
+
+        // imprime conteo
+        System.out.format("VOCALES: %d     CONSONANTES: %d%n", cont_vocal, cont_cons);
+    }
+
     public static void main(String[] args) {
-        individual15();
+        //individual15();
+        individual17();
     }
 }
