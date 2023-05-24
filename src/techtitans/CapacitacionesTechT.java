@@ -191,7 +191,9 @@ public class CapacitacionesTechT {
         }
 
         //Datos de los asistentes
-
+        int notaMin = 0;
+        int notaMax = 0;
+        int promedio [] = new int[asistentes]; // arreglo entero para sacar el promedio
         int[] edadAsistentes = new int[asistentes]; //Arreglo para guardar las edades de los asistentes
         String [][] calificaciones = new String[asistentes][2];
         if (asistentes > 0) {
@@ -199,18 +201,29 @@ public class CapacitacionesTechT {
 
                     System.out.println("Ingrese nombre de asistente");
                     String nombreAsistente = leer.nextLine();
+
+
                     while (nombreAsistente.isEmpty()) {
                         System.out.println("Debe ingresar un nombre, no puede quedar vacío");
                         nombreAsistente = leer.nextLine();
                     }
+
+
                     System.out.println("Ingrese calificacion de la capacitacion");
                     String notaAsistente = leer.nextLine();
-                    while (notaAsistente.isEmpty()) {
-                        System.out.println("Debe ingresar un nombre, no puede quedar vacío");
+                    while (notaAsistente.isEmpty()  || !notaAsistente.matches("[1-7]")) {
+                        System.out.println("debe ingresar una nota entre 1 y 7");
                         notaAsistente = leer.nextLine();
                     }
                         calificaciones[i][0]= nombreAsistente;
                         calificaciones[i][1]= notaAsistente;
+                        promedio[i] = Integer.parseInt(notaAsistente);
+
+                        int nota = Integer.parseInt(notaAsistente);
+                         notaMin = Math.min(nota, 7);
+                         notaMax = Math.max(nota, 1);
+
+
 
                         System.out.println("Ingrese edad del asistente " + nombreAsistente);
                     String edadInput = leer.nextLine();
@@ -267,6 +280,37 @@ public class CapacitacionesTechT {
 
 
         }
+        int prom = 0;
+        int acum = 0;
+        for (int i = 0; i < promedio.length ; i++) {
+            acum += promedio[i];
+
+        }
+
+        prom = acum/promedio.length;
+
+
+        int min = 0;
+        int max = 0;
+        int nota = 0;
+        for (int i = 0; i <promedio.length ; i++) {
+            if(min < promedio[i]){
+                min = min;
+                System.out.println(min);
+            }else{
+                max = min;
+                System.out.println(max);
+
+            }
+            System.out.println(max+","+min);
+        }
+
+
+
+
+        System.out.println("El promedio del curso es :"+prom);
+      /*  System.out.println("La nota Minima es :"+notaMin);
+        System.out.println("La nota Maxima es :"+notaMax);*/
 
 
         leer.close();
