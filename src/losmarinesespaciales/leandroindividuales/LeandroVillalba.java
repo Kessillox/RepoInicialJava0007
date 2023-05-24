@@ -1,4 +1,4 @@
-package losmarinesespaciales;
+package losmarinesespaciales.leandroindividuales;
 import java.util.*;
 
 public class LeandroVillalba {
