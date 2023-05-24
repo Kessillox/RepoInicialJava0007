@@ -191,8 +191,7 @@ public class CapacitacionesTechT {
         }
 
         //Datos de los asistentes
-        int notaMin = 0;
-        int notaMax = 0;
+
         int promedio [] = new int[asistentes]; // arreglo entero para sacar el promedio
         int[] edadAsistentes = new int[asistentes]; //Arreglo para guardar las edades de los asistentes
         String [][] calificaciones = new String[asistentes][2];
@@ -218,10 +217,6 @@ public class CapacitacionesTechT {
                         calificaciones[i][0]= nombreAsistente;
                         calificaciones[i][1]= notaAsistente;
                         promedio[i] = Integer.parseInt(notaAsistente);
-
-                        int nota = Integer.parseInt(notaAsistente);
-                         notaMin = Math.min(nota, 7);
-                         notaMax = Math.max(nota, 1);
 
 
 
@@ -290,27 +285,23 @@ public class CapacitacionesTechT {
         prom = acum/promedio.length;
 
 
-        int min = 0;
-        int max = 0;
-        int nota = 0;
-        for (int i = 0; i <promedio.length ; i++) {
-            if(min < promedio[i]){
-                min = min;
-                System.out.println(min);
-            }else{
-                max = min;
-                System.out.println(max);
+        int min = promedio[0];  // Inicializar min con el primer elemento del arreglo
+        int max = promedio[0];  // Inicializar max con el primer elemento del arreglo
 
+        for (int i = 1; i < promedio.length; i++) {  // Comenzar desde el segundo elemento
+            if (promedio[i] < min) {
+                min = promedio[i];
             }
-            System.out.println(max+","+min);
+            if (promedio[i] > max) {
+                max = promedio[i];
+            }
         }
 
-
+        System.out.println("El valor mínimo es: " + min);
+        System.out.println("El valor máximo es: " + max);
 
 
         System.out.println("El promedio del curso es :"+prom);
-      /*  System.out.println("La nota Minima es :"+notaMin);
-        System.out.println("La nota Maxima es :"+notaMax);*/
 
 
         leer.close();
