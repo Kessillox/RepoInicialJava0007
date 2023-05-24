@@ -1,7 +1,7 @@
 package duality;
 import java.util.Scanner;
 
-public class EjercicioGrupal9Duality {
+public class TG9Duality {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
