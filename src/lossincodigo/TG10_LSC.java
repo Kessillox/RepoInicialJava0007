@@ -43,7 +43,6 @@ public class TG10_LSC {
         // Divide la suma de las notas en la cantidad de notas o asistentes
         promedio = promedio / cantidadAsistentes;
 
-
         // Finalmente muestra en consola la información
         System.out.println("***** DATOS GUARDADOS *****");
         System.out.format("DÍA: %s   HORA: %s   LUGAR: %s   DURACIÓN: %smin.   N° ASISTENTES: %d%n", dia, hora, lugar, duracion, cantidadAsistentes);
