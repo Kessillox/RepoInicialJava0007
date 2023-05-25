@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Grupal_10_Marines {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int opcion, dia, cantidadAsistentes, duracion, calificacion;
+        int opcion, dia, cantidadAsistentes, duracion, calificacion, suma;
         String hora, lugar, nombre;
 
         do {
@@ -46,24 +46,36 @@ public class Grupal_10_Marines {
                         arreglo[i][0] = nombre=scanner.next();
 
                         calificacion=0;
+                        suma = 0;
                         while(calificacion <1 || calificacion >7) {
 
                             System.out.println("Ingrese su calificación al evento (1 a 7):");
                             calificacion=scanner.nextInt();
                             String calificacionString = Integer.toString(calificacion);
                             arreglo[i][1]=calificacionString;
+                            System.out.println(calificacion);
+
                         }
 
                     }
                     System.out.println("");
+
                     System.out.println("********* Calificaciones *********");
                     for (int i=0; i<cantidadAsistentes; i++) {
                         for (int j=0; j<2; j++) {
 
                             System.out.print(arreglo[i][j] + " ");
+
                         }
                         System.out.println("");
                     }
+
+                    System.out.println("Los datos ingresados fueron los siguientes: ");
+                    System.out.println("Dia de capacitacion: " + dia);
+                    System.out.println("Hora de capacitacion: " + hora);
+                    System.out.println("Lugar de capacitacion: " + lugar);
+                    System.out.println("Duracion de capacitacion: " + duracion);
+                    System.out.println("Cantidad de asistentes a la capacitacion: " + cantidadAsistentes);
 
 
                     break;
