@@ -1,6 +1,6 @@
-package losmarinesespaciales;
+package losmarinesespaciales.grupales;
 import java.util.Scanner;
-public class Grupal9Marines {
+public class Grupal_09_Marines {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 

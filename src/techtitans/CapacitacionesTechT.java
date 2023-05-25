@@ -3,6 +3,12 @@ package techtitans;
 import java.util.Scanner;
 import java.lang.System;
 
+
+
+// Cintia Muñoz
+// Hans Schiess
+// Joaquin Baeza
+// Oscar Fernandez
 public class CapacitacionesTechT {
     public static void main(String[] args) {
 
@@ -185,24 +191,45 @@ public class CapacitacionesTechT {
         }
 
         //Datos de los asistentes
+
+        int promedio [] = new int[asistentes]; // arreglo entero para sacar el promedio
         int[] edadAsistentes = new int[asistentes]; //Arreglo para guardar las edades de los asistentes
+        String [][] calificaciones = new String[asistentes][2];
         if (asistentes > 0) {
             for (int i = 0; i < asistentes; i++) {
-                System.out.println("Ingrese nombre de asistente");
-                String nombreAsistente = leer.nextLine();
-                while (nombreAsistente.isEmpty()) {
-                    System.out.println("Debe ingresar un nombre, no puede quedar vacío");
-                    nombreAsistente = leer.nextLine();
+
+                    System.out.println("Ingrese nombre de asistente");
+                    String nombreAsistente = leer.nextLine();
+
+
+                    while (nombreAsistente.isEmpty()) {
+                        System.out.println("Debe ingresar un nombre, no puede quedar vacío");
+                        nombreAsistente = leer.nextLine();
+                    }
+
+
+                    System.out.println("Ingrese calificacion de la capacitacion");
+                    String notaAsistente = leer.nextLine();
+                    while (notaAsistente.isEmpty()  || !notaAsistente.matches("[1-7]")) {
+                        System.out.println("debe ingresar una nota entre 1 y 7");
+                        notaAsistente = leer.nextLine();
+                    }
+                        calificaciones[i][0]= nombreAsistente;
+                        calificaciones[i][1]= notaAsistente;
+                        promedio[i] = Integer.parseInt(notaAsistente);
+
+
+
+                        System.out.println("Ingrese edad del asistente " + nombreAsistente);
+                    String edadInput = leer.nextLine();
+
+                    while (edadInput.isEmpty() || !edadInput.matches("\\d+")) {
+                        System.out.println("Debe ingresar una edad válida, es decir número y no puede estar vacío");
+                        edadInput = leer.nextLine();
+                    }
+                    edadAsistentes[i] = Integer.parseInt(edadInput);
                 }
 
-                System.out.println("Ingrese edad del asistente " +nombreAsistente);
-                String edadInput = leer.nextLine();
-                while (edadInput.isEmpty() || !edadInput.matches("\\d+")) {
-                    System.out.println("Debe ingresar una edad válida, es decir número y no puede estar vacío");
-                    edadInput = leer.nextLine();
-                }
-                edadAsistentes[i] = Integer.parseInt(edadInput);
-            }
         } else {
             System.out.println("Debe ingresar un número de asistentes válido");
             System.exit(0);
@@ -239,6 +266,44 @@ public class CapacitacionesTechT {
         System.out.println("La cantidad de asistentes menores de 25: "+menores25);
         System.out.println("La cantidad de asistentes entre 26 y 35: "+entre26y35);
         System.out.println("La cantidad de asistentes mayores de 35: "+mayores35);
+
+
+        for (int i = 0; i <calificaciones.length ; i++) {
+
+
+                System.out.println(" el nombre: "+calificaciones[i][0]+" y la nota es: "+calificaciones[i][1]);
+
+
+        }
+        int prom = 0;
+        int acum = 0;
+        for (int i = 0; i < promedio.length ; i++) {
+            acum += promedio[i];
+
+        }
+
+        prom = acum/promedio.length;
+
+
+        int min = promedio[0];  // Inicializar min con el primer elemento del arreglo
+        int max = promedio[0];  // Inicializar max con el primer elemento del arreglo
+
+        for (int i = 1; i < promedio.length; i++) {  // Comenzar desde el segundo elemento
+            if (promedio[i] < min) {
+                min = promedio[i];
+            }
+            if (promedio[i] > max) {
+                max = promedio[i];
+            }
+        }
+
+        System.out.println("El valor mínimo es: " + min);
+        System.out.println("El valor máximo es: " + max);
+
+
+        System.out.println("El promedio del curso es :"+prom);
+
+
         leer.close();
     }
 
