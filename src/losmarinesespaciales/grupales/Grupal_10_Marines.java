@@ -53,7 +53,6 @@ public class Grupal_10_Marines {
                             calificacion=scanner.nextInt();
                             String calificacionString = Integer.toString(calificacion);
                             arreglo[i][1]=calificacionString;
-                            System.out.println(calificacion);
 
                         }
 
