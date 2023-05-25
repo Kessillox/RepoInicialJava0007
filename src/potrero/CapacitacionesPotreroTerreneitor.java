@@ -105,7 +105,39 @@ public class CapacitacionesPotreroTerreneitor {
             }
         }
 
+        for (int i = 0; i < cantidadAsistentes; i++) {
+            while (nombreCliente.trim().equals("") || nombreCliente.equals(null)) {
+                System.out.println("Ingresar nombreCliente Capacitación");
+                nombreCliente = sc.nextLine();
+                if (nombreCliente.trim().equals("") || nombreCliente.equals(null)) {
+                    System.out.println("Error ingresar dato válido");
+                }
+            }
+            while (runCliente.trim().equals("") || runCliente.equals(null)) {
+                System.out.println("Ingresar runCliente Capacitación");
+                runCliente = sc.nextLine();
+                if (runCliente.trim().equals("") || runCliente.equals(null)) {
+                    System.out.println("Error ingresar dato válido");
+                }
+            }
+            while (telefono.trim().equals("") || telefono.equals(null)) {
+                System.out.println("Ingresar telefono Capacitación");
+                telefono = sc.nextLine();
+                if (telefono.trim().equals("") || telefono.equals(null)) {
+                    System.out.println("Error ingresar dato válido");
+                }
+            }
+            while (direccion.trim().equals("") || direccion.equals(null)) {
+                System.out.println("Ingresar direccion Capacitación");
+                direccion = sc.nextLine();
+                if (direccion.trim().equals("") || direccion.equals(null)) {
+                    System.out.println("Error ingresar dato válido");
+                }
+            }
+            clientes.set(i, nombreCliente.concat(" rut: " + runCliente.concat(", teléfono: " + telefono.concat(", dirección: " + direccion))));
+        }
 
+        System.out.println("día " + dia + " hora: " + hora);
 
 
     }
