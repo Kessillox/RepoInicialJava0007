@@ -2,8 +2,7 @@ package techtitans;
 
 import java.util.Scanner;
 import java.lang.System;
-
-
+import java.util.Arrays;
 
 // Cintia Muñoz
 // Hans Schiess
@@ -14,8 +13,9 @@ public class CapacitacionesTechT {
 
         Scanner leer = new Scanner(System.in);
 
-        //Datos de la empresa y su respectiva validación
-        //ID empresa
+        // Datos de la empresa y su respectiva validación
+
+        // ID empresa
         int id;
         while (true) {
             System.out.println("Ingrese ID de la empresa");
@@ -32,8 +32,7 @@ public class CapacitacionesTechT {
             }
         }
 
-
-        //Rut empresa
+        // Rut empresa
         String rut;
         do {
             System.out.println("Ingrese RUT de la empresa (EJEMPLO: 77555444-3)");
@@ -42,7 +41,6 @@ public class CapacitacionesTechT {
                 System.out.println("El RUT no puede estar vacío");
             }
         } while (rut.isEmpty());
-
 
         // Nombre empresa
         String nombreEmpresa;
@@ -71,7 +69,6 @@ public class CapacitacionesTechT {
             }
         }
 
-
         // Teléfono
         Long telefono;
         while (true) {
@@ -90,7 +87,6 @@ public class CapacitacionesTechT {
             leer.nextLine(); // Descartar el resto de la línea actual
         }
 
-
         // Nombre de usuario
         String nombreUsuario;
         leer.nextLine();
@@ -106,7 +102,6 @@ public class CapacitacionesTechT {
             }
         }
 
-
         // RUN
         String run;
         System.out.println("Ingrese Run del usuario (Ejemplo: 15333444-1)");
@@ -118,7 +113,6 @@ public class CapacitacionesTechT {
                 System.out.println("El Run no puede estar vacío");
             }
         }
-
 
         // Día de la capacitación
         String dia;
@@ -132,8 +126,7 @@ public class CapacitacionesTechT {
             }
         }
 
-
-        //Hora de la capacitación
+        // Hora de la capacitación
         String hora;
         while (true) {
             System.out.println("Ingrese hora de la capacitación (EJEMPLO: 09:00)");
@@ -145,7 +138,7 @@ public class CapacitacionesTechT {
             }
         }
 
-        //Lugar de la capacitación
+        // Lugar de la capacitación
         String lugar;
         while (true) {
             System.out.println("Ingrese lugar dónde se realizará la capacitación");
@@ -157,7 +150,7 @@ public class CapacitacionesTechT {
             }
         }
 
-        //Tiempo que durará la capacitación
+        // Tiempo que durará la capacitación
         String duracion;
         while (true) {
             System.out.println("Ingrese duración de la capacitación (EJEMPLO: 1 hora)");
@@ -169,7 +162,7 @@ public class CapacitacionesTechT {
             }
         }
 
-        //Cantidad de asistentes
+        // Cantidad de asistentes
         int asistentes;
         System.out.println("Ingrese número de asistentes a la capacitación");
         while (true) {
@@ -190,54 +183,56 @@ public class CapacitacionesTechT {
             }
         }
 
-        //Datos de los asistentes
+        // Arreglos
+        float promedio[] = new float[asistentes]; //Arreglo de decimales
+        int[] minMax = new int[asistentes]; // Arreglo para obtener calificación mayor y menor
+        int[] edadAsistentes = new int[asistentes]; // Arreglo para guardar las edades de los asistentes
+        String[][] calificaciones = new String[asistentes][2];
 
-        int promedio [] = new int[asistentes]; // arreglo entero para sacar el promedio
-        int[] edadAsistentes = new int[asistentes]; //Arreglo para guardar las edades de los asistentes
-        String [][] calificaciones = new String[asistentes][2];
+        // Datos de los asistentes
         if (asistentes > 0) {
             for (int i = 0; i < asistentes; i++) {
 
-                    System.out.println("Ingrese nombre de asistente");
-                    String nombreAsistente = leer.nextLine();
-
-
-                    while (nombreAsistente.isEmpty()) {
-                        System.out.println("Debe ingresar un nombre, no puede quedar vacío");
-                        nombreAsistente = leer.nextLine();
-                    }
-
-
-                    System.out.println("Ingrese calificacion de la capacitacion");
-                    String notaAsistente = leer.nextLine();
-                    while (notaAsistente.isEmpty()  || !notaAsistente.matches("[1-7]")) {
-                        System.out.println("debe ingresar una nota entre 1 y 7");
-                        notaAsistente = leer.nextLine();
-                    }
-                        calificaciones[i][0]= nombreAsistente;
-                        calificaciones[i][1]= notaAsistente;
-                        promedio[i] = Integer.parseInt(notaAsistente);
-
-
-
-                        System.out.println("Ingrese edad del asistente " + nombreAsistente);
-                    String edadInput = leer.nextLine();
-
-                    while (edadInput.isEmpty() || !edadInput.matches("\\d+")) {
-                        System.out.println("Debe ingresar una edad válida, es decir número y no puede estar vacío");
-                        edadInput = leer.nextLine();
-                    }
-                    edadAsistentes[i] = Integer.parseInt(edadInput);
+                // Nombre de asistente
+                System.out.println("Ingrese nombre de asistente");
+                String nombreAsistente = leer.nextLine();
+                while (nombreAsistente.isEmpty()) {
+                    System.out.println("Debe ingresar un nombre, no puede quedar vacío");
+                    nombreAsistente = leer.nextLine();
                 }
+
+                // Calificación de la capacitación
+                System.out.println("Ingrese calificacion de la capacitacion");
+                String notaAsistente = leer.nextLine();
+                while (notaAsistente.isEmpty() || !notaAsistente.matches("[1-7]")) {
+                    System.out.println("debe ingresar una nota entre 1 y 7");
+                    notaAsistente = leer.nextLine();
+                }
+                calificaciones[i][0] = nombreAsistente;
+                calificaciones[i][1] = notaAsistente;
+
+                float decimal = Float.parseFloat(notaAsistente); // Transformar calificación a decimal
+                promedio[i] = decimal;
+
+                minMax[i] = Integer.parseInt(notaAsistente); // Transformar capacitación a entero
+
+                // Edad del asistente
+                System.out.println("Ingrese edad del asistente " + nombreAsistente);
+                String edadInput = leer.nextLine();
+
+                while (edadInput.isEmpty() || !edadInput.matches("\\d+")) {
+                    System.out.println("Debe ingresar una edad válida, es decir número y no puede estar vacío");
+                    edadInput = leer.nextLine();
+                }
+                edadAsistentes[i] = Integer.parseInt(edadInput);
+            }
 
         } else {
             System.out.println("Debe ingresar un número de asistentes válido");
             System.exit(0);
         }
 
-
-
-        //Cantidad de asistentes por rango etareo
+        // Cantidad de asistentes por rango etareo
         int menores25 = 0;
         int entre26y35 = 0;
         int mayores35 = 0;
@@ -251,58 +246,46 @@ public class CapacitacionesTechT {
             }
         }
 
-        //Mostrar datos
+        // Mostrar datos
         System.out.println("============================================");
         System.out.println("Los datos de la empresa son los siguientes: ");
-        System.out.println("ID empresa "+ id + "; Nombre de la empresa: " + nombreEmpresa + "; Dirección: " + direccion + "; Teléfono: " + telefono);
+        System.out.println("ID empresa " + id + "; Nombre de la empresa: " + nombreEmpresa + "; Dirección: " + direccion
+                + "; Teléfono: " + telefono);
         System.out.println("........................");
         System.out.println("Los datos de usuario de la empresa son: ");
         System.out.println("Nombre usuario: " + nombreUsuario + "; Run usuario: " + run);
         System.out.println("........................");
         System.out.println("Los datos de la capacitacion son: ");
-        System.out.println("Día de capacitación: " + dia + "; Hora: " + hora + "; Lugar: " + lugar + "; Duración: " + duracion + "; Cantidad de asistentes: " + asistentes);
+        System.out.println("Día de capacitación: " + dia + "; Hora: " + hora + "; Lugar: " + lugar + "; Duración: "
+                + duracion + "; Cantidad de asistentes: " + asistentes);
         System.out.println("........................");
         System.out.println("Cantidad de asistentes por rango etario");
-        System.out.println("La cantidad de asistentes menores de 25: "+menores25);
-        System.out.println("La cantidad de asistentes entre 26 y 35: "+entre26y35);
-        System.out.println("La cantidad de asistentes mayores de 35: "+mayores35);
+        System.out.println("La cantidad de asistentes menores de 25: " + menores25);
+        System.out.println("La cantidad de asistentes entre 26 y 35: " + entre26y35);
+        System.out.println("La cantidad de asistentes mayores de 35: " + mayores35);
 
-
-        for (int i = 0; i <calificaciones.length ; i++) {
-
-
-                System.out.println(" el nombre: "+calificaciones[i][0]+" y la nota es: "+calificaciones[i][1]);
-
-
+        // Mostrar matríz de nombre y calificación
+        for (int i = 0; i < calificaciones.length; i++) {
+            System.out.println(" el nombre: " + calificaciones[i][0] + " y la nota es: " + calificaciones[i][1]);
         }
-        int prom = 0;
-        int acum = 0;
-        for (int i = 0; i < promedio.length ; i++) {
+        float prom = 0;
+        float acum = 0;
+        for (int i = 0; i < promedio.length; i++) {
             acum += promedio[i];
-
         }
 
-        prom = acum/promedio.length;
+        // Calcular promedio
+        prom = acum / promedio.length;
+        float promDecimal = Math.round(prom * 10.0f) / 10.0f; //Que permita un sólo decimal
 
-
-        int min = promedio[0];  // Inicializar min con el primer elemento del arreglo
-        int max = promedio[0];  // Inicializar max con el primer elemento del arreglo
-
-        for (int i = 1; i < promedio.length; i++) {  // Comenzar desde el segundo elemento
-            if (promedio[i] < min) {
-                min = promedio[i];
-            }
-            if (promedio[i] > max) {
-                max = promedio[i];
-            }
-        }
-
-        System.out.println("El valor mínimo es: " + min);
-        System.out.println("El valor máximo es: " + max);
-
-
-        System.out.println("El promedio del curso es :"+prom);
-
+        // Obtener la calificación mayor y menor
+        int maximo = Arrays.stream(minMax).max().getAsInt();
+        int minimo = Arrays.stream(minMax).min().getAsInt();
+        System.out.println(".............................");
+        System.out.println("El promedio del curso es : " + promDecimal);
+        System.out.println(".............................");
+        System.out.println("La mayor calificación es: " + maximo);
+        System.out.println("La menor calificación es: " + minimo);
 
         leer.close();
     }
