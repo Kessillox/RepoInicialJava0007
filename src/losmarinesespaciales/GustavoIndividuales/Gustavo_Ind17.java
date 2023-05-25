@@ -2,7 +2,7 @@ package losmarinesespaciales.GustavoIndividuales;
 
 import java.util.Scanner;
 
-public class GustavoVargas {
+public class Gustavo_Ind17 {
     public static void main(String[] args) {
         // Iniciación de Scanner
         Scanner input = new Scanner(System.in);
