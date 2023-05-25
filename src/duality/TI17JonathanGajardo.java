@@ -2,7 +2,7 @@ package duality;
 
 import java.util.Scanner;
 
-public class JonathanGajardo {
+public class TI17JonathanGajardo {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
