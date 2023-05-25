@@ -27,7 +27,8 @@ public class individual19 {
         String frase = "";
         char caracter = ' ';
 
-        char [] abecedario = new char[] {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+        //char [] abecedario = new char[] {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+        String abecedario = "abcdefghijklmnopqrstuvwxyz";
         int contador = 0;
 
         // Creando la variable tipo Scanner
@@ -53,33 +54,30 @@ public class individual19 {
                     System.out.println(caracter);
 
                 }
+
             }
 
             System.out.println("");
             System.out.println("Abecedario y cantidad de veces que se repite la letra:");
             System.out.println("");
-
-            // Se imprime el abecedario, y la cantidad de veces que se usó la letra
-
-            for (int i=0; i<abecedario.length; i++) {
-                System.out.println(abecedario[i]);
-                for (int j=0; j<arreglo.length;j++) {
-                    if(abecedario[i] == arreglo[j] ) {
+            // Recorro la cantidad de caracteres que tenga la frase
+            for (int i=0; i<abecedario.length(); i++){
+                // Comparo caracter de la frase con caracter del abecedario, si coinciden sumo 1 al contador
+                for (int j=0; j<frase.length();j++) {
+                    if(abecedario.charAt(i) == frase.charAt(j) ) {
                         contador = contador +1;
-                        System.out.println(abecedario[i] + ": " + contador);
-
-                    } //else System.out.println(abecedario[i]);
-
+                    }
                 }
+                // Imprime el abecedario: letra + cantidad de veces que figura en la frase
+                System.out.println(abecedario.charAt(i) + ": " + contador);
                 // Reseteo el contador
                 contador = 0;
 
+
             }
+
+
         }
-
-
-
-
 
 
 
