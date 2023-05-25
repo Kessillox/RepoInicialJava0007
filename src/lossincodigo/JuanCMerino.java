@@ -1,7 +1,7 @@
 package lossincodigo;
 import java.util.Scanner;
 
-public class JuanMerino {
+public class JuanCMerino {
 
     // INDIVIDUAL 15
     public static void individual15() {
