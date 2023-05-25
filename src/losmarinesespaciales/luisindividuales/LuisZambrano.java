@@ -1,4 +1,4 @@
-package losmarinesespaciales;
+package losmarinesespaciales.luisindividuales;
 import java.util.Scanner;
 
 public class LuisZambrano {
