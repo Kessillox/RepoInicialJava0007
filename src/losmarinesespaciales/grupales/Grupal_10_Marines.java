@@ -52,7 +52,7 @@ public class Grupal_10_Marines {
                         }
 
                     }
-                    System.out.println("");
+
                     /*
                     * Inicicializo la variable suma en 0
                     *
@@ -76,7 +76,6 @@ public class Grupal_10_Marines {
                     System.out.println("Duracion de capacitacion: " + duracion);
                     System.out.println("Cantidad de asistentes a la capacitacion: " + cantidadAsistentes);
                     System.out.println("El promedio de las notas asignadas es: " + promedio);
-
 
                     break;
                 case 2:
