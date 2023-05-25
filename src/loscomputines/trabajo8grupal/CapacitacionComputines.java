@@ -17,7 +17,14 @@ public class CapacitacionComputines {
     String hora;
     String lugar;
     int duracion;
+
+
+    //Datos Asistente
     int asistenteCantidad;
+    String nombreAsistente;
+    int edadAsistente;
+
+
 
 
     Scanner scan = new Scanner(System.in);
@@ -25,7 +32,7 @@ public class CapacitacionComputines {
     public CapacitacionComputines() {
     }
 
-    public CapacitacionComputines(int rut, String nombre, String direccion, String comuna, int numeroTelefono, String dia, String hora, String lugar, int duracion, Scanner scan, int asistenteCantidad) {
+    public CapacitacionComputines(int rut, String nombre, String direccion, String comuna, int numeroTelefono, String dia, String hora, String lugar, int duracion, Scanner scan, int asistenteCantidad, String nombreAsistente, int edadAsistente) {
         this.rut = rut;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -37,6 +44,9 @@ public class CapacitacionComputines {
         this.duracion = duracion;
         this.scan = scan;
         this.asistenteCantidad = asistenteCantidad;
+        this.nombreAsistente = nombreAsistente;
+        this.edadAsistente = edadAsistente;
+
     }
 
     public void datosCapacitacion () {
@@ -83,7 +93,28 @@ public class CapacitacionComputines {
                 System.out.println("Numero de cantidad de asistente invalida, por favor ingrese numero valido");
                 asistenteCantidad = scan.nextInt();
             }while (asistenteCantidad <= 0);
-        };
+
+        }
+
+        //if asistenteCantidad <= 25
+        for (int i =0; i < asistenteCantidad; i++) {
+            System.out.println("Ingrese los datos del asistente " + (i + 1) + ":");
+            System.out.print("Nombre: ");
+           nombreAsistente[i] = scan.nextLine();
+            System.out.print("Edad: ");
+            edadAsistente[i] = scan.nextInt();
+            scan.nextLine(); // Consumir el salto de línea después de ingresar la edad
+
+        }
+
+
+
+        /* 10 Asistentes
+            10 nombres
+            10 edades
+            <=25
+            25<x<=35
+            35<x (editado) */
 
 
 
@@ -105,7 +136,7 @@ public class CapacitacionComputines {
         System.out.println("Comuna: " + comuna);
         System.out.println("Número de teléfono: " + numeroTelefono);
 
-        System.out.println("\nDatos de la capacitación:");
+        System.out.println("\n*** Datos de la capacitación *** ");
         System.out.println("Día: " + dia);
         System.out.println("Hora: " + hora);
         System.out.println("Lugar: " + lugar);
