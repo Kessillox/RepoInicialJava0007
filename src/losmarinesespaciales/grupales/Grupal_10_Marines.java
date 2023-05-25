@@ -1,5 +1,6 @@
 package losmarinesespaciales.grupales;
 import java.util.Scanner;
+import java.lang.Math;
 public class Grupal_10_Marines {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -69,6 +70,14 @@ public class Grupal_10_Marines {
 
                     promedio = suma / cantidadAsistentes;
 
+                    int notaMasBaja = Math.min(calificaciones[0], calificaciones[1]);
+                    int notaMasAlta = Math.max(calificaciones[0], calificaciones[1]);
+
+                    for (int i = 2; i < cantidadAsistentes; i++) {
+                        notaMasBaja = Math.min(notaMasBaja, calificaciones[i]);
+                        notaMasAlta = Math.max(notaMasAlta, calificaciones[i]);
+                    }
+
                     System.out.println("Los datos ingresados fueron los siguientes: ");
                     System.out.println("Dia de capacitacion: " + dia);
                     System.out.println("Hora de capacitacion: " + hora);
@@ -76,6 +85,8 @@ public class Grupal_10_Marines {
                     System.out.println("Duracion de capacitacion: " + duracion);
                     System.out.println("Cantidad de asistentes a la capacitacion: " + cantidadAsistentes);
                     System.out.println("El promedio de las notas asignadas es: " + promedio);
+                    System.out.println("La nota mas alta es: " + notaMasAlta);
+                    System.out.println("La nota mas baja es: " + notaMasBaja);
 
                     break;
                 case 2:
