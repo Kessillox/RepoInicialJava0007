@@ -1,7 +1,7 @@
-package losmarinesespaciales;
+package losmarinesespaciales.leandroindividuales;
 import java.util.*;
 
-public class LeandroVillalba {
+public class individual17 {
     public static void main(String[] args) {
 
 
