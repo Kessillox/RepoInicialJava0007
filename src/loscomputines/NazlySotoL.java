@@ -1,2 +1,4 @@
-package loscomputines;public class NazlySotoL {
+package loscomputines;
+
+public class NazlySotoL {
 }
