@@ -85,8 +85,6 @@ public class CapacitacionComputines {
             }while (asistenteCantidad <= 0);
         };
 
-
-
         /*while (asistenteCantidad <= 0)
             System.out.println("Deser ser mayor que cero la cantidad de los asistentes. Ingrese nuevamente: ");
             asistenteCantidad = scan.nextInt(); scan.nextLine();*/
