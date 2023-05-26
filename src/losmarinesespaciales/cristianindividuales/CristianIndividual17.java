@@ -1,4 +1,4 @@
-package losmarinesespaciales.CristianIndividuales;
+package losmarinesespaciales.cristianindividuales;
 
 import java.util.Scanner;
 public class CristianIndividual17 {
