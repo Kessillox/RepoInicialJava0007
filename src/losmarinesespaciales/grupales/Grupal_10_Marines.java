@@ -24,10 +24,11 @@ public class Grupal_10_Marines {
                     System.out.println("Bienvenido al registro de capacitaciones.\n");
                     System.out.println("Ingresa el dia de la capacitacion (Numero de dia)");
                     dia = scanner.nextInt();
+                    scanner.nextLine();
                     System.out.println("Ingresa la hora de la capacitacion");
-                    hora = scanner.next();
+                    hora = scanner.nextLine();
                     System.out.println("Ingresa el lugar donde se realizara la capacitacion");
-                    lugar = scanner.next();
+                    lugar = scanner.nextLine();
                     System.out.println("Ingresa la duracion de la capacitacion (En dias)");
                     duracion = scanner.nextInt();
                     System.out.println("Ingresa la cantidad de asistentes a la capacitacion");
