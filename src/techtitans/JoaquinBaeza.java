@@ -26,11 +26,14 @@ public class JoaquinBaeza {
         int consonantes = 0;
 
         for (int i = 0; i < largoCadena; i++) {
-            if (cadena.toLowerCase().charAt(i) == 'a' || cadena.toLowerCase().charAt(i) == 'e' || cadena.toLowerCase().charAt(i) == 'i' || cadena.toLowerCase().charAt(i) == 'o' || cadena.toLowerCase().charAt(i) == 'u') {
-                vocales++;
-            } else {
-                consonantes++;
+            if (Character.isLetter(cadena.toLowerCase().charAt(i))) {
+                if (cadena.toLowerCase().charAt(i) == 'a' || cadena.toLowerCase().charAt(i) == 'e' || cadena.toLowerCase().charAt(i) == 'i' || cadena.toLowerCase().charAt(i) == 'o' || cadena.toLowerCase().charAt(i) == 'u') {
+                    vocales++;
+                } else {
+                    consonantes++;
+                }
             }
+            
         }
         System.out.println("Vocales: " + vocales + " Consonantes: " + consonantes);
     }
