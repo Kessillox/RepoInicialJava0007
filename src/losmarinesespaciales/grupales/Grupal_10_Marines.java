@@ -28,7 +28,7 @@ public class Grupal_10_Marines {
                     System.out.println("Ingresa la hora de la capacitacion");
                     hora = scanner.nextLine();
                     System.out.println("Ingresa el lugar donde se realizara la capacitacion");
-                    lugar = scanner.nextLine();
+                    lugar = scanner .nextLine();
                     System.out.println("Ingresa la duracion de la capacitacion (En dias)");
                     duracion = scanner.nextInt();
                     System.out.println("Ingresa la cantidad de asistentes a la capacitacion");
@@ -69,7 +69,9 @@ public class Grupal_10_Marines {
                         //System.out.println(suma);
                     }
 
-                    promedio = suma / cantidadAsistentes;
+                    /*Para que el resultado de la variable de tipo double promedio de el resultado correcto
+                    * tenemos que castear a double al menos uno de las dos variables (operando) que están en int*/
+                    promedio = (double) suma / cantidadAsistentes;
 
                     int notaMasBaja = Math.min(calificaciones[0], calificaciones[1]);
                     int notaMasAlta = Math.max(calificaciones[0], calificaciones[1]);
