@@ -1,4 +1,4 @@
-package losmarinesespaciales.Grupales;
+package losmarinesespaciales.grupales;
 import java.util.Scanner;
 public class Grupal_09_Marines {
     public static void main(String[] args) {

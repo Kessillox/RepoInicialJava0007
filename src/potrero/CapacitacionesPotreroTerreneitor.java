@@ -1,8 +1,5 @@
 package potrero;
 
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
 
 public class CapacitacionesPotreroTerreneitor {
@@ -160,7 +157,6 @@ public class CapacitacionesPotreroTerreneitor {
         System.out.println("día " + dia + " hora: " + hora + ", lugar: " + lugar + ", duración : " + duracion
                 + "hrs. \nEmpresa: " + nombre + ", rut: " + rut + ", dirección: " + direccion + ", teléfono: " + telefono + "\nCantidad de asistentes: " + cantidadAsistentes);
 
-
         System.out.println("Personas que asisten menores a 25 años");
         for (int i = 0; i < nombres.length; i++) {
             if (edades[i] < 25) {
@@ -181,7 +177,6 @@ public class CapacitacionesPotreroTerreneitor {
                 System.out.println("nombre: " + nombres[i] + ", run: " + runs[i] + ", edad: " + edades[i]);
             }
         }
-
 
     }
 }

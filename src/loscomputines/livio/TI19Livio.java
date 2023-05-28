@@ -1,4 +1,4 @@
-package loscomputines;
+package loscomputines.livio;
 
 import java.util.Scanner;
 

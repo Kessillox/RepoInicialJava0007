@@ -34,6 +34,5 @@ public class IvanBecerra {
         System.out.println("Cantidad de vocales: " + cantidadVocales);
         System.out.println("Cantidad de consonantes: " + cantidadConsonantes);
 
-
     }
 }

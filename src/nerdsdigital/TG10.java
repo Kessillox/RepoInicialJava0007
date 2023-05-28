@@ -34,6 +34,10 @@ public class TG10 {
         //Datos funcionamiento
         int nCapacitaciones = 0;
 
+        int calificacionMayor = 1;
+        int calificacionMenor = 7;
+
+
         nCapacitaciones = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero de capacitaciones que desea ingresar")
         );
         for (int i = 0; i < nCapacitaciones; i++) {
@@ -92,6 +96,9 @@ public class TG10 {
             }while (edadAsistente < 18 || edadAsistente > 60);
             do {
                 calificacionAsistente = Integer.parseInt(JOptionPane.showInputDialog("Ingrese una calificacion entre 1 y 7 en relacion a la capacitacion."));
+                calificacionMayor = calificacionAsistente > calificacionMayor ? calificacionAsistente : calificacionMayor;
+                calificacionMenor = calificacionAsistente < calificacionMenor ? calificacionAsistente : calificacionMenor;
+
             }while (calificacionAsistente < 1 || calificacionAsistente > 7);
 
             //Guardar datos en la matriz
@@ -100,7 +107,17 @@ public class TG10 {
 
         }
 
+        double prom = 0;
+        double suma = 0;
+        for (int i = 0; i < matriz.length; i++){
+            suma += Double.parseDouble(matriz[i][1]);
+        }
+        prom = suma/cantidadAsistentes;
 
+
+        JOptionPane.showMessageDialog(null, "promedio: " + prom);
+
+        System.out.println("Calificacion mayor: " + calificacionMayor + "\nCalificacion menor: "+ calificacionMenor);
 
         System.out.println("Datos de la empresa:");
         System.out.println("RUT: " + rutCliente);
