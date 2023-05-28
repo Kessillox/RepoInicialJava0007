@@ -1,4 +1,4 @@
 package loscomputines;
 
-public class GenesisPaola {
+public class genesispaola {
 }
