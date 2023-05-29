@@ -20,6 +20,9 @@ public class ContadorLetras {
             System.out.print(letra);
         }
 
+        System.out.println(arregloLetras);
+        System.out.println(longitud);
+        String[] alReves = new String[longitud];
         System.out.println("\n");
 
         int[] contadorLetras = new int[26]; // Arreglo para contar las letras del abecedario
