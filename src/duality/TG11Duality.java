@@ -1,7 +1,7 @@
 package duality;
 public class TG11Duality {
     public static void main(String[] args) {
-
+        // Comentario de prueba git
         String mensaje = "Lorem ipsum dolor sit amet," +
             "consectetur adipiscing elit. Donec facilisis est ac ante viverra," +
             "vel efficitur leo consequat. Maecenas quis lorem sit amet diam" +
