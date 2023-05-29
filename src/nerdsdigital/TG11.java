@@ -1,3 +1,8 @@
+/*Integrantes:
+        Nehemias Muñoz
+        Manuel Pinot
+        Gonzalo Alonzo*/
+
 package nerdsdigital;
 
 public class TG11 {
