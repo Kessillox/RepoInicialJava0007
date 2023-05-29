@@ -1,4 +1,4 @@
-package techtitans;
+package techtitans.cintia;
 import java.util.Scanner;
 public class CintiaMunoz {
     public static void main(String[] args) {
