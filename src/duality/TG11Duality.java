@@ -1,4 +1,4 @@
-package duality.grupal11duality;
+package duality;
 public class TG11Duality {
     public static void main(String[] args) {
 
