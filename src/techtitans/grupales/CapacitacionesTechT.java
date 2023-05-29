@@ -1,43 +1,18 @@
-package techtitans;
+package techtitans.grupales;
 
 import java.util.Scanner;
+import java.lang.System;
 import java.util.Arrays;
 
-public class Grupal10 {
+// Cintia Muñoz
+// Hans Schiess
+// Joaquin Baeza
+// Oscar Fernandez
+public class CapacitacionesTechT {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int opcion;
 
-        do {
-            System.out.println("Menú:");
-            System.out.println("1. Registrar empresa");
-            System.out.println("2. Registrar capacitación");
-            System.out.println("0. Salir");
-            System.out.print("Ingrese una opción: ");
-            opcion = scanner.nextInt();
-
-            switch (opcion) {
-                case 1:
-                    datosEmpresa();
-                    break;
-                case 2:
-                    capacitaciones();
-                    break;
-                case 0:
-                    System.out.println("Programa finalizado");
-                    break;
-                default:
-                    System.out.println("Opción inválida. Intente nuevamente.");
-                    break;
-            }
-            System.out.println();
-        } while (opcion != 0);
-    }
-
-
-
-    public static void datosEmpresa() {
         Scanner leer = new Scanner(System.in);
+
         // Datos de la empresa y su respectiva validación
 
         // ID empresa
@@ -98,26 +73,24 @@ public class Grupal10 {
         Long telefono;
         while (true) {
             System.out.println("Ingrese teléfono de contacto (EJEMPLO: 56954313978)");
-            String input = leer.nextLine();
-            //telefono = leer.nextLong();
-
-            if (input.isEmpty()) {
-                System.out.println("El teléfono no puede estar en blanco");
-                // Vuelve al inicio del bucle sin avanzar
-            }
-
-            if (input.matches("\\d+")) {
-                telefono = Long.parseLong(input);
-                break; // Sale del bucle si se ingresa un número válido
+            String input = leer.next();
+            if (!input.isEmpty()) {
+                if (input.matches("\\d+")) {
+                    telefono = Long.parseLong(input);
+                    break;
+                } else {
+                    System.out.println("Debe ingresar un valor numérico entero para el teléfono");
+                }
             } else {
-                System.out.println("Debe ingresar un valor numérico entero para el teléfono");
+                System.out.println("El teléfono no puede estar en blanco");
             }
+            leer.nextLine(); // Descartar el resto de la línea actual
         }
-
-
 
         // Nombre de usuario
         String nombreUsuario;
+        leer.nextLine();
+
         while (true) {
             System.out.println("Ingrese nombre del usuario");
             nombreUsuario = leer.nextLine();
@@ -141,22 +114,6 @@ public class Grupal10 {
             }
         }
 
-        // Mostrar datos
-        System.out.println("============================================");
-        System.out.println("Los datos de la empresa son los siguientes: ");
-        System.out.println("ID empresa " + id + "; Nombre de la empresa: " + nombreEmpresa + "; Dirección: " + direccion
-                + "; Teléfono: " + telefono);
-        System.out.println("........................");
-        System.out.println("Los datos de usuario de la empresa son: ");
-        System.out.println("Nombre usuario: " + nombreUsuario + "; Run usuario: " + run);
-
-
-    }
-
-
-    public static void capacitaciones () {
-
-        Scanner leer = new Scanner(System.in);
         // Día de la capacitación
         String dia;
         while (true) {
@@ -289,6 +246,14 @@ public class Grupal10 {
             }
         }
 
+        // Mostrar datos
+        System.out.println("============================================");
+        System.out.println("Los datos de la empresa son los siguientes: ");
+        System.out.println("ID empresa " + id + "; Nombre de la empresa: " + nombreEmpresa + "; Dirección: " + direccion
+                + "; Teléfono: " + telefono);
+        System.out.println("........................");
+        System.out.println("Los datos de usuario de la empresa son: ");
+        System.out.println("Nombre usuario: " + nombreUsuario + "; Run usuario: " + run);
         System.out.println("........................");
         System.out.println("Los datos de la capacitacion son: ");
         System.out.println("Día de capacitación: " + dia + "; Hora: " + hora + "; Lugar: " + lugar + "; Duración: "
@@ -317,12 +282,12 @@ public class Grupal10 {
         int maximo = Arrays.stream(minMax).max().getAsInt();
         int minimo = Arrays.stream(minMax).min().getAsInt();
         System.out.println(".............................");
-        System.out.println("El promedio del curso es :" + promDecimal);
+        System.out.println("El promedio del curso es : " + promDecimal);
         System.out.println(".............................");
         System.out.println("La mayor calificación es: " + maximo);
         System.out.println("La menor calificación es: " + minimo);
+
+        leer.close();
     }
 
 }
-
-
