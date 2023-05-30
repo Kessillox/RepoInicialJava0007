@@ -1,4 +1,3 @@
-
 // 1.- El nombre del package es Clase11 debe tener el nombre en minusculas y el nombre del paquete correcto
 package losmarinesespaciales.luisindividuales.individual21;
 
