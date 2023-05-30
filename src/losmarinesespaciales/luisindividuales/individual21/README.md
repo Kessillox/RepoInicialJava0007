@@ -1,7 +1,5 @@
 # Ejercicio Individual 21
 
----
-
 _Luis Zambrano_
 
 ###### Enunciado:
