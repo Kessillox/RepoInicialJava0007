@@ -4,6 +4,10 @@ import javax.swing.JOptionPane;
                Nehemías Muñoz
                Manuel Pinot
  */
+/**
+ * @author nerdsDigital
+ * */
+
 public class TG9 {
     public static void main(String[] args) {
         // Datos identificacion capacitacion
@@ -18,7 +22,6 @@ public class TG9 {
         String horaCapacitacion = "";
         String lugarCapacitacion = "";
         String duracionCapacitacion = "";
-        // int cantidadAsistentes = 0;
 
         // Datos Asistentes
         String nombreAsistente = "";
@@ -29,6 +32,8 @@ public class TG9 {
 
         nCapacitaciones = Integer
                 .parseInt(JOptionPane.showInputDialog("Ingrese el numero de capacitaciones que desea ingresar"));
+
+        // segun la cantidad de capacitaciones solicitamos sus datos y validamos que no se ingresen datos nulos o en blanco
         for (int i = 0; i < nCapacitaciones; i++) {
             do {
                 rutCliente = JOptionPane.showInputDialog("Ingrese el rut del cliente");
@@ -65,6 +70,7 @@ public class TG9 {
         int mayores35 = 0;
 
         cantidadAsistentes = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de asistentes"));
+        //segun la cantidad de asistentes solicitamos sus datos y agrupamos por categoria
         for (int i = 0; i < cantidadAsistentes; i++) {
             do {
                 nombreAsistente = JOptionPane.showInputDialog("Ingrese el nombre del asistente");
@@ -80,7 +86,7 @@ public class TG9 {
                 }
             } while (edadAsistente < 18 || edadAsistente > 60);
         }
-
+        //Imprimir los parametros como resumen general cliente
         System.out.println("Datos de la empresa:");
         System.out.println("RUT: " + rutCliente);
         System.out.println("Nombre: " + nombreCliente);
