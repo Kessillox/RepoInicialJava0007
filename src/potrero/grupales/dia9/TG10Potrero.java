@@ -3,7 +3,10 @@ package potrero.grupales.dia9;
 import java.util.Scanner;
 
 /**
+ * Lee datos de la capacitación, la empresa y los asistentes de la capacitación
+ * pide las notas y muestra la nota más baja, más alta y el promedio
  * @author Iván Becerra, Cristian Durán y Ignacio Aránguiz
+ * @version 1.0.1
  */
 public class TG10Potrero {
 
