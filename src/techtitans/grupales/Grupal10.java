@@ -245,7 +245,7 @@ public class Grupal10 {
                 }
 
                 // Calificación de la capacitación
-                System.out.println("Ingrese calificacion de la capacitacion");
+                System.out.println("Ingrese calificacion de la capacitacion (entre 1.0 a 7.0)");
                 String notaAsistente = leer.nextLine();
                 while (notaAsistente.isEmpty() || !notaAsistente.matches("[1-7]")) {
                     System.out.println("debe ingresar una nota entre 1 y 7");
