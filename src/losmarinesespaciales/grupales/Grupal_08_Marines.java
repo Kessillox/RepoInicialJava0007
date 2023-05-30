@@ -1,4 +1,4 @@
-package losmarinesespaciales.Grupales;
+package losmarinesespaciales.grupales;
 
 import java.util.Scanner;
 
