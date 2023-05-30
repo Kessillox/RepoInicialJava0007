@@ -1,5 +1,9 @@
 package potrero.grupales.dia10;
-
+/**
+ * Correción de errores del trabajo grupal 11
+ * @author Iván Becerra, Cristian Durán y Ignacio Aránguiz
+ * @version 1.0.1
+ */
 public class Ejemplo {
     public static void main(String[] args) {
 
