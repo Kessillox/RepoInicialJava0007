@@ -2,7 +2,7 @@ package potrero.grupales;
 
 import java.util.Scanner;
 
-public class CapacitacionesPotreroTerreneitor {
+public class TG9PotreroCapacitaciones {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
