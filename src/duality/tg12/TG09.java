@@ -1,4 +1,4 @@
-package duality.TG12;
+package duality.tg12;
 import java.util.Scanner;
 public class TG09 {
     public static void main(String[] args) {
