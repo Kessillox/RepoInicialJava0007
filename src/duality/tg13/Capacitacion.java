@@ -1,2 +1,4 @@
-package duality.tg13;public class Capacitacion {
+package duality.tg13;
+
+public class Capacitacion {
 }

@@ -1,4 +1,4 @@
-package duality.TG12;
+package duality.tg12;
 
 public class TG011 {
     public static void main(String[] args) {
