@@ -1,5 +1,10 @@
 package techtitans.grupales.clase11;
 
+// Integrantes : Cintia Muñoz
+//               Joaquin Baeza
+//               Hans Schiess
+//               Oscar Fernandez
+
 public class Ejemplo02 {
     public static void main(String[] args) {
         final boolean VALOR_CONSTANTE = false;
