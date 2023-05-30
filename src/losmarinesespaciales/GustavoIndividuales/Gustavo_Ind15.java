@@ -1,4 +1,4 @@
-package losmarinesespaciales.GustavoIndividuales;
+package losmarinesespaciales.gustavoindividuales;
 import java.util.Scanner;
 
 public class Gustavo_Ind15 {
