@@ -13,29 +13,37 @@ public class CristianDuran {
         String entrada = sc.nextLine();
 
         String letras = "";
+
         int vocales = 0;
+
         int consonantes;
+
         int n_letras = 0;
-        int n_espacios= 0;
 
-            for ( int i=0; i<entrada.length(); i++){
-                if(Character.isLetter(entrada.charAt(i))){
-                    letras+=entrada.charAt(i) + " - ";
-                }
-                if((entrada.charAt(i) == 'a') || (entrada.charAt(i) == 'e') || (entrada.charAt(i) == 'i') || (entrada.charAt(i) == 'o') || (entrada.charAt(i) == 'u')){
-                    vocales++;
-                }
-                if(Character.isLetter(entrada.charAt(i))){
-                    n_letras++;
-                }
-                if(Character.isSpaceChar(entrada.charAt(i))){
-                    n_espacios++;
-                }
+        int n_espacios = 0;
+
+        for (int i = 0; i < entrada.length(); i++) {
+
+            if (Character.isLetter(entrada.charAt(i))) {
+                letras += entrada.charAt(i) + " - ";
             }
-            //Resta de las variables vocales y n_letras
-            consonantes = n_letras - vocales;
 
+            if ((entrada.charAt(i) == 'a') || (entrada.charAt(i) == 'e') ||
+                    (entrada.charAt(i) == 'i') || (entrada.charAt(i) == 'o')
+                    || (entrada.charAt(i) == 'u')) {
+                vocales++;
+            }
 
+            if (Character.isLetter(entrada.charAt(i))) {
+                n_letras++;
+            }
+
+            if (Character.isSpaceChar(entrada.charAt(i))) {
+                n_espacios++;
+            }
+        }
+
+        consonantes = n_letras - vocales;
 
         System.out.println("Deletreo: " + letras);
         System.out.println("Cantidad de vocales: " + vocales);
@@ -43,17 +51,5 @@ public class CristianDuran {
         System.out.println("Cantidad de letras totales: " + n_letras);
         System.out.println("Cantidad de espacios: " + n_espacios);
 
-
-        //Solo deletrea
-
-        // Scanner sc = new Scanner(System.in);
-        //System.out.println("Ingrese cadena de texto:");
-
-        // String cadenaTexto = sc.nextLine();
-
-        //for (int i = 0; i < cadenaTexto.length(); i++) {
-
-        // System.out.println(cadenaTexto.charAt(i));
-        //}
     }
 }
