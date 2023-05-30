@@ -2,6 +2,14 @@ package potrero.grupales.dia8;
 
 import java.util.Scanner;
 
+/**
+ * Esta es la clase TG9PotreroCapacitaciones, contiene 12 atributos.
+ * Pide los datos de la capacitación e imprime por consola la cantidad de personas menores a 25 años, entre 26 y 35 años y mayores a 35 años.
+ * @author Cristian Durán - Iván Becerra - Ignacio Aránguiz
+ * @version 1.0v
+ * @see potrero.grupales.dia8
+ */
+
 public class TG9PotreroCapacitaciones {
     public static void main(String[] args) {
 
@@ -23,6 +31,7 @@ public class TG9PotreroCapacitaciones {
         Double duracion = 0d;
         Integer cantidadAsistentes = 0;
 
+        //Pedir y validar datos por consola
         while (dia.trim().equals("") || dia.equals(null)) {
             System.out.println("Ingresar día Capacitación");
             dia = sc.nextLine();
