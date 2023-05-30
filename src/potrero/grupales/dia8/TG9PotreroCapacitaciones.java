@@ -1,4 +1,4 @@
-package potrero.grupales;
+package potrero.grupales.dia8;
 
 import java.util.Scanner;
 
