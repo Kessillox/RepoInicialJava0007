@@ -1,4 +1,4 @@
-package potrero;
+package potrero.individuales.ivan;
 
 import java.util.Scanner;
 
