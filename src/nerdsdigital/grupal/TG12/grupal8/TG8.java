@@ -5,6 +5,12 @@ import javax.swing.*;
                Manuel Pinot
  */
 public class TG8 {
+    /**
+     * Método principal.
+     *
+     * @param args los argumentos de la línea de comandos.
+     * @throws Exception si ocurre alguna excepción.
+     */
 
     public static void main(String[] args) throws Exception {
         String nombre = "";
@@ -19,13 +25,16 @@ public class TG8 {
         String departamento = "";
         String funcion = "";
         String nombreSuperior = "";
+
         numeroUsuarios = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero de clientes"));
+
         for (int i = 0; i < numeroUsuarios; i++) {
             nombre = JOptionPane.showInputDialog("Ingrese el nombre del usuario");
             fechaDeNacimiento = JOptionPane.showInputDialog("Ingrese la fecha de nacimiento del usuario");
             run = JOptionPane.showInputDialog("Ingrese el run del usuario");
             JOptionPane.showMessageDialog(null,"Ingrese el tipo de usuario");
             tipoUsuario = JOptionPane.showInputDialog(" - Cliente \n - Profesional \n - Administrativo");
+
             switch (tipoUsuario.toLowerCase().trim()){
                 case "cliente":
                     direccion = JOptionPane.showInputDialog("Ingrese la direccion del cliente");
