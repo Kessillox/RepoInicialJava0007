@@ -1,4 +1,4 @@
-package losmarinesespaciales.grupales;
+package losmarinesespaciales.grupales.grupal_12_marines.grupal_10_marines;
 import java.util.Scanner;
 import java.lang.Math;
 public class Grupal_10_Marines {
