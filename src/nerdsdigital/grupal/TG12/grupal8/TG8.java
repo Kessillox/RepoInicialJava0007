@@ -7,7 +7,7 @@ import javax.swing.*;
 public class TG8 {
     /**
      * Método principal.
-     *
+     * @author nerdsdigital
      * @param args los argumentos de la línea de comandos.
      * @throws Exception si ocurre alguna excepción.
      */
@@ -28,6 +28,7 @@ public class TG8 {
 
         numeroUsuarios = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero de clientes"));
 
+        // Ciclo for para ingresar los datos de cada usuario
         for (int i = 0; i < numeroUsuarios; i++) {
             nombre = JOptionPane.showInputDialog("Ingrese el nombre del usuario");
             fechaDeNacimiento = JOptionPane.showInputDialog("Ingrese la fecha de nacimiento del usuario");
@@ -35,6 +36,7 @@ public class TG8 {
             JOptionPane.showMessageDialog(null,"Ingrese el tipo de usuario");
             tipoUsuario = JOptionPane.showInputDialog(" - Cliente \n - Profesional \n - Administrativo");
 
+            // Switch para manejar diferentes tipos de usuarios
             switch (tipoUsuario.toLowerCase().trim()){
                 case "cliente":
                     direccion = JOptionPane.showInputDialog("Ingrese la direccion del cliente");
@@ -51,6 +53,7 @@ public class TG8 {
                     break;
             }
         }
+        // Concatenar los datos ingresados en una cadena para mostrar como mensaje
         String mensaje = nombre +" "+ fechaDeNacimiento +" "+ run +" "+ direccion+ " "+ telefono +" "+ cantidadEmpleados+ " "+ aniosExperiencia+ " "+ departamento + " "+ funcion +" "+ nombreSuperior;
         JOptionPane.showMessageDialog(null, mensaje);
     }
