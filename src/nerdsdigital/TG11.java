@@ -7,7 +7,7 @@ package nerdsdigital;
 
 public class TG11 {
 
-    /*package Clase11; //Debe comenzar en minúscula
+    /* package Clase11; //Debe comenzar en minúscula
     public class $EjeMpl0_2 { // $ No está permitido y solo la primera letra en mayúscula a no ser que exista otra palabra.
         public static void main(String[] args) {
             final boolean valorconstante = false; //valorConstante , nombre en mayusculas al ser constante
