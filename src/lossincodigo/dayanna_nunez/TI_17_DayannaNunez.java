@@ -3,10 +3,9 @@ package lossincodigo.dayanna_nunez;
 import java.util.Scanner;
 
 public class TI_17_DayannaNunez {
-    import java.util.Scanner;
 
-    public class Main {
-        public static void main(String[] args) {
+
+    public static void individual() {
             Scanner sc = new Scanner(System.in);
             String cadena="a";
             int vocales=0;
@@ -33,7 +32,11 @@ public class TI_17_DayannaNunez {
             }
             System.out.println("La cantidad de vocales son: "+vocales);
             System.out.println("La cantidad de consonantes son: "+consonantes);
-        }
     }
 
+
+
+    public static void main(String[] args) {
+            individual();
+    }
 }
