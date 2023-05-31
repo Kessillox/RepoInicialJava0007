@@ -1,9 +1,22 @@
 package losmarinesespaciales.grupales.grupal_12_marines.grupal_11_marines;
 
+
+/**
+ * Esta es la clase que define las correcciones realizadas en el ejercicio grupal 11
+ * @author Luis Zambrano
+ * @author Cristian Trureo
+ * @author Gustavo Vargas
+ * @author Leandro Villalba
+ * @author Luis Zambrano
+ * @version 1.0
+ * @see losmarinesespaciales.grupales.grupal_12_marines
+ */
 public class Grupal_11_Marines {
     public static void main(String[] args) {
+        //Declaración e inicialización de Constante
         final boolean VALOR_CONSTANTE = false;
 
+        //Declaración e inicialización de String mensaje
         String mensaje = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis est ac ante viverra," +
                 " vel efficitur leo consequat." +
                 " Maecenas quis lorem sit amet diam consequat lacinia non nec lacus." +
@@ -17,19 +30,26 @@ public class Grupal_11_Marines {
                 " ridiculus mus." +
                 " Donec sit amet ultricies dui. Donec aliquet rhoncus velit et sollicitudin.";
 
+        //Declaración e inicialización de int repetirHasta que contiene la cantidad de iteraciones para el for
         int repetirHasta = 10;
 
+        //Declaración de ciclo for que repite n veces imprimiendo el resultado de la multiplicación de i
         for (int i = 0; i < repetirHasta; i++) {
 
             System.out.println("Valor: " + (i * i));
         }
+
         /*
         Esto es un comentario
         demasiado grande
         para que esté en una
         sola línea
         */
+
+        //Impresión de mensaje
         System.out.println("El mensaje es" + mensaje);
+
+        //Impresión de constante VALOR_CONSTANTE
         System.out.println(" El valor de la constante es: " + VALOR_CONSTANTE);
     }
 }
