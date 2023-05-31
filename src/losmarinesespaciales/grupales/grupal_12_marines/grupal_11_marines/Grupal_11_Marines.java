@@ -3,7 +3,6 @@ package losmarinesespaciales.grupales.grupal_12_marines.grupal_11_marines;
 
 /**
  * Esta es la clase que define las correcciones realizadas en el ejercicio grupal 11
- * @author Luis Zambrano
  * @author Cristian Trureo
  * @author Gustavo Vargas
  * @author Leandro Villalba
