@@ -73,13 +73,23 @@ public class Grupal_10_Marines {
                     * tenemos que castear a double al menos uno de las dos variables (operando) que están en int*/
                     promedio = (double) suma / cantidadAsistentes;
 
-                    int notaMasBaja = Math.min(calificaciones[0], calificaciones[1]);
-                    int notaMasAlta = Math.max(calificaciones[0], calificaciones[1]);
+                    int notaMasBaja = 0;
+                    int notaMasAlta = 0;
 
-                    for (int i = 2; i < cantidadAsistentes; i++) {
-                        notaMasBaja = Math.min(notaMasBaja, calificaciones[i]);
-                        notaMasAlta = Math.max(notaMasAlta, calificaciones[i]);
+                    if(cantidadAsistentes == 1){
+                        notaMasBaja = suma;
+                        notaMasAlta = suma;
+                    } else {
+                        notaMasBaja = Math.min(calificaciones[0], calificaciones[1]);
+                        notaMasAlta = Math.max(calificaciones[0], calificaciones[1]);
+
+                        for (int i = 2; i < cantidadAsistentes; i++) {
+                            notaMasBaja = Math.min(notaMasBaja, calificaciones[i]);
+                            notaMasAlta = Math.max(notaMasAlta, calificaciones[i]);
+                        }
                     }
+
+
 
                     System.out.println("Los datos ingresados fueron los siguientes: ");
                     System.out.println("Dia de capacitacion: " + dia);
