@@ -9,7 +9,9 @@ public class Gustavo_Ind17 {
 
         // Variables
         String cadena;
-        int vocales = 0, consonantes = 0, caracteres = 0;
+        int vocales = 0,
+                consonantes = 0,
+                caracteres = 0;
 
         // Uso de Hacer - Mientras
         do {
