@@ -32,9 +32,9 @@ Implementando lo aprendido en el módulo, creamos una nueva clase a partir del e
 
 ### Integrantes:
 
-| Marines Espaciales:                                             |
-| --------------------------------------------------------------- |
-| Cristian Trureo |
-| Luis Zambrano |
-| Marcelo Vargas |
-| Leandro Villalba |
+| Marines Espaciales: |
+|---------------------|
+| Cristian Trureo     |
+| Luis Zambrano       |
+| Marcelo Vargas      |
+| Leandro Villalba    |

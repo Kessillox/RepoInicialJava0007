@@ -9,7 +9,7 @@ import java.lang.Math;
  * calificación al evento.
  * Finalmente despliega los datos entregados, con un promedio, la califiación
  * mayor y la calificación menor
- * @author Cristian Trurero, Gustavo Vargas, Leandro Villalba y Luis Zambrano
+ * @author Cristian Trureo, Gustavo Vargas, Leandro Villalba y Luis Zambrano
  * @version 1.0.0
  *
  * */
