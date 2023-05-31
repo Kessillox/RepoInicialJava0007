@@ -186,7 +186,6 @@ public class TG9_LSC {
 
     public static void main(String[] args) {
         TG9_LSC programa = new TG9_LSC();
-
         programa.ingresarDatosCapacitacion();
         programa.ingresarDatosAsistentes();
         programa.mostrarDatosCapacitacion();
