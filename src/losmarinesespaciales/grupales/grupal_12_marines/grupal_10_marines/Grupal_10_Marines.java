@@ -9,8 +9,12 @@ import java.lang.Math;
  * calificación al evento.
  * Finalmente despliega los datos entregados, con un promedio, la califiación
  * mayor y la calificación menor
- * @author Cristian Trureo, Gustavo Vargas, Leandro Villalba y Luis Zambrano
+ * @author Cristian Trureo
+ * @author Gustavo Vargas
+ * @author Leandro Villalba
+ * @author Luis Zambrano
  * @version 1.0.0
+ * @see losmarinesespaciales.grupales.grupal_12_marines
  *
  * */
 public class Grupal_10_Marines {
