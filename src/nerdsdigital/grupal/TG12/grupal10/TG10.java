@@ -6,10 +6,14 @@ import javax.swing.*;
                Nehemías Muñoz
                Manuel Pinot
  */
+/**
+ * @author nerdsDigital
+ * */
 public class TG10 {
 
     public static void main(String[] args) {
         //Datos identificacion capacitacion
+        // variables de sistema
         int id = 0;
         String rutCliente = "";
         String nombreCliente = "";
@@ -35,9 +39,10 @@ public class TG10 {
         int calificacionMayor = 1;
         int calificacionMenor = 7;
 
-
+        //solicita ingreso cantidad capacitaciones
         nCapacitaciones = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero de capacitaciones que desea ingresar")
         );
+        // solicita ingreso de cliente,datos de la capacitacion y asistentes
         for (int i = 0; i < nCapacitaciones; i++) {
             id +=1;
             do {
@@ -114,7 +119,7 @@ public class TG10 {
 
 
         JOptionPane.showMessageDialog(null, "promedio: " + prom);
-
+        // pinta en terminal informacion del cliente, capacitacion y asistentes
         System.out.println("Calificacion mayor: " + calificacionMayor + "\nCalificacion menor: "+ calificacionMenor);
 
         System.out.println("Datos de la empresa:");
