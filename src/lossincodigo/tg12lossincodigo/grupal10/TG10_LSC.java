@@ -1,8 +1,25 @@
 package lossincodigo.tg12lossincodigo.grupal10;
 import java.util.Scanner;
 
+/**
+ * @author Juan Merino
+ * @version 1.0
+ */
 public class TG10_LSC {
     public static void main(String[] args) {
+        /**
+         * Solicita y almacena información sobre las capcitaciones.
+         * Además, calcula promedio y nota más alta y más baja.
+         * @param dia Variable que almacena el día de la cacapcitación.
+         * @param hora Variable que almacena la hora de la capacitación.
+         * @param lugar Variable que almacena el lugar de la capacitación.
+         * @param duracion Variable que almacena la duración de la capacitación
+         * @param cantidadAsistentes Variable numérica que almacena la cantidad de asistentes de la cap.
+         * @param repetirCiclo Booleano que permite ingresar otra capacitación si usuario lo desea.
+         * @param promedio Variable que almacena el promedio de las notas de los asistentes.
+         * @param notaBaja Variable que almacena la nota más baja del curso.
+         * @param notaAlta Variable que almacena la nota más alta del curso.
+         */
         //Scanner
         Scanner sc = new Scanner(System.in);
 
