@@ -1,6 +1,18 @@
 package losmarinesespaciales.grupales.grupal_12_marines.grupal_10_marines;
 import java.util.Scanner;
 import java.lang.Math;
+
+/**
+ * Esta clase solicita el día, hora, lugar, duración y cantidad de asistentes
+ * de una capacitación.
+ * Además crea un arreglo bidimensional con el nombre de cada asistente y su
+ * calificación al evento.
+ * Finalmente despliega los datos entregados, con un promedio, la califiación
+ * mayor y la calificación menor
+ * @author Cristian Trurero, Gustavo Vargas, Leandro Villalba y Luis Zambrano
+ * @version 1.0.0
+ *
+ * */
 public class Grupal_10_Marines {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
