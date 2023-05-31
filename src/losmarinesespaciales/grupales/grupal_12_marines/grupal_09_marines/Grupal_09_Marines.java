@@ -1,9 +1,19 @@
 package losmarinesespaciales.grupales.grupal_12_marines.grupal_09_marines;
 import java.util.Scanner;
+
+/**
+ * Esta es la clase referente al grupal n°9, para registrar y mostrar por
+ * la terminal datos relativos a nuestras capacitaciones.
+ * @author cristiantrureo
+ * @author leandrovillalba
+ * @author luiszambrano
+ * @author gustavovargas
+ * @version 1.0
+ * @see losmarinesespaciales.grupales.grupal_12_marines
+ */
+
 public class Grupal_09_Marines {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         Scanner entrada = new Scanner(System.in);
         String name_assist = "";
         int year_assist = 0;
@@ -211,7 +221,7 @@ public class Grupal_09_Marines {
 
 
         //	FOR PARA LLENAR INFO SEGÚN CANTIDAD DE ASISTENTES
-//		Scanner entrada2 = new Scanner(System.in); // NO ERA NECESARIO HACER UN NUEVO SCANNER SOLO VOLVER A INSTANCIARLO PARA CADA ITERACION
+
         for(int i = 0; i < input_cantidad_cap; i++) {
             entrada = new Scanner(System.in);
 
@@ -281,8 +291,7 @@ public class Grupal_09_Marines {
         System.out.println("Registro Completo!");
 
 
-        entrada.close(); // SIN CERRAR SCANNER ARROJABA ADVERTENCIAS
-//		entrada2.close();
+        entrada.close();
     }
 
 }
