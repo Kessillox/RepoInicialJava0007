@@ -38,9 +38,5 @@ public class Individual23 {
                 }
             }
         }
-
-        // Nota: No sé si yo no entendí bien, pero el punto de que al ingresar una cadena en blanco (No espacio) se debe omitir, no sé como interpretarlo. :(
-        //       Lo encontre un poco ambiguo.
-
     }
 }
