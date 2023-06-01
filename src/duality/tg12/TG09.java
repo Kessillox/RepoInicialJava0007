@@ -22,7 +22,7 @@ public class TG09 {
      * @var cantidadAsistentes
      * @var edad
      * Variables pedidas por consola al usuario, para su posterior utilizacion en el programa. Con los datos
-     * ingresados se realizan operaciones las que lueguen seran imprimidas por pantalla.
+     * ingresados se realizan operaciones las que luego seran imprimidas por pantalla.
      * */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

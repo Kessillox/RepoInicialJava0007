@@ -26,6 +26,7 @@ public class TG010 {
         int asistentes = sc.nextInt();
         sc.nextLine();
 
+
         Object[][] calificaciones = new Object[asistentes][2];
 
         for (int i = 0; i < asistentes; i++) {

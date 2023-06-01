@@ -1,5 +1,9 @@
 package duality.tg12;
-
+/**
+ * @autor Jonathan Gajardo, Valentin Urrea, Natalia Perez
+ * @version 1.0
+ * Clase TG11, corrigiendo documento con buenas practicas de programacion
+ * */
 public class TG011 {
     public static void main(String[] args) {
         String mensaje = "Lorem ipsum dolor sit amet," +
