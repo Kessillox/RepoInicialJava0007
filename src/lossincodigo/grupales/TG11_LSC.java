@@ -1,9 +1,11 @@
-package lossincodigo.tg12lossincodigo.Clase11;
+package lossincodigo.grupales;
+
+import lossincodigo.grupales.grupal12.Clase11.Ejemplo2;
 
 /**
  * Clase del ejercicio grupal 11 reescrita para aplicar buenas prácticas y convenciones.
  */
-public class Ejemplo2 {
+public class TG11_LSC {
     private boolean valorConstante;
     private String mensaje;
     private int ola;
@@ -11,7 +13,7 @@ public class Ejemplo2 {
     /**
      * Constructor vacío de la clase Ejemplo2.
      */
-    public Ejemplo2() {
+    public TG11_LSC() {
         this.valorConstante = false;
         this.mensaje = "";
         this.ola = 0;
@@ -19,11 +21,10 @@ public class Ejemplo2 {
 
     /**
      * Constructor de la clase Ejemplo2.
-     *
      * @param mensaje El mensaje del ejemplo.
      * @param ola     El valor de Ola.
      */
-    public Ejemplo2(String mensaje, int ola) {
+    public TG11_LSC(String mensaje, int ola) {
         this.valorConstante = false;
         this.mensaje = mensaje;
         this.ola = ola;
@@ -31,7 +32,6 @@ public class Ejemplo2 {
 
     /**
      * Método principal que ejecuta el ejemplo.
-     *
      * @param args Los argumentos de la línea de comandos.
      */
     public static void main(String[] args) {
@@ -61,7 +61,6 @@ public class Ejemplo2 {
 
     /**
      * Establece el mensaje del ejemplo.
-     *
      * @param mensaje El mensaje a establecer.
      */
     public void setMensaje(String mensaje) {
@@ -70,7 +69,6 @@ public class Ejemplo2 {
 
     /**
      * Obtiene el mensaje del ejemplo.
-     *
      * @return El mensaje del ejemplo.
      */
     public String getMensaje() {
@@ -79,7 +77,6 @@ public class Ejemplo2 {
 
     /**
      * Establece el valor de ola.
-     *
      * @param ola El valor de ola a establecer.
      */
     public void setOla(int ola) {
@@ -88,7 +85,6 @@ public class Ejemplo2 {
 
     /**
      * Obtiene el valor de ola.
-     *
      * @return El valor de ola.
      */
     public int getOla() {

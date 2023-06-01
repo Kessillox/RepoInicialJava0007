@@ -1,4 +1,4 @@
-package lossincodigo.tg12lossincodigo.grupal10;
+package lossincodigo.grupales.grupal12.grupal10;
 import java.util.Scanner;
 
 /**

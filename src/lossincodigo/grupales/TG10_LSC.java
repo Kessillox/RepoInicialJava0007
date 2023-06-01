@@ -1,4 +1,4 @@
-package lossincodigo;
+package lossincodigo.grupales;
 import java.util.Scanner;
 
 public class TG10_LSC {

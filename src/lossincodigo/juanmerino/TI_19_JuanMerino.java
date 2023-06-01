@@ -1,4 +1,4 @@
-package lossincodigo.JuanMerino;
+package lossincodigo.juanmerino;
 import java.util.ArrayList;
 import java.util.Scanner;
 

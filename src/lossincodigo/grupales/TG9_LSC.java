@@ -1,12 +1,7 @@
-package lossincodigo.tg12lossincodigo.grupal9;
+package lossincodigo.grupales;
 import java.util.Scanner;
 
-/**
- * @author Rodrigo Chandia
- * @version 1.0
- * Grupo: Los Sin Código
- */
-public class TG9_LSC {
+public class TG9_LSC() {
     private String rutEmpresa;
     private String nombreEmpresa;
     private String direccionEmpresa;
@@ -19,10 +14,6 @@ public class TG9_LSC {
     private int duracionCapacitacion;
     private int cantidadAsistentes;
 
-    /**
-     * Solicita la información de las capacitaciones al usuario con Scanner.
-     * Cada información está almacenada en su variable correspondiente.
-     */
     public void ingresarDatosCapacitacion() {
         Scanner scanner = new Scanner(System.in);
 
@@ -71,9 +62,6 @@ public class TG9_LSC {
         }
     }
 
-    /**
-     * Función que solicita la información de cada asistente y los contabiliza dependiendo de la edad.
-     */
     public void ingresarDatosAsistentes() {
         Scanner scanner = new Scanner(System.in);
 
@@ -110,9 +98,6 @@ public class TG9_LSC {
         System.out.println("Cantidad de personas mayores a 35 años: " + contadorMayores35);
     }
 
-    /**
-     * Función para imprimir en consola la información de la capacitación y el cliente/usuario.
-     */
     public void mostrarDatosCapacitacion() {
         System.out.println("Datos de la empresa:");
         System.out.println("RUT: " + rutEmpresa);
@@ -130,11 +115,6 @@ public class TG9_LSC {
         System.out.println("Cantidad de asistentes: " + cantidadAsistentes);
     }
 
-    /**
-     * Función que valida la fecha de la capacitación ingresada por el cliente/usuario.
-     * @param fecha fecha ingresada por usuario en String
-     * @return true si la fecha fue ingresada correctamente, false en caso contrario.
-     */
     private boolean validarFecha(String fecha) {
         try {
             String[] partesFecha = fecha.split("/");
@@ -152,11 +132,6 @@ public class TG9_LSC {
         return true;
     }
 
-    /**
-     * Función que valida que la edad ingresada de cada asistente sea un número.
-     * @param valor variable temporal que se usa para validad que sea número
-     * @return true si el valor es numérico, false en caso contrario
-     */
     private boolean esNumero(String valor) {
         try {
             Integer.parseInt(valor);
@@ -166,11 +141,9 @@ public class TG9_LSC {
         return true;
     }
 
-    /**
-     * Método principal, instancia clase TG9_LSC y utiliza sus métodos para obtener resultado deseado.
-     */
     public static void main(String[] args) {
         TG9_LSC programa = new TG9_LSC();
+
         programa.ingresarDatosCapacitacion();
         programa.ingresarDatosAsistentes();
         programa.mostrarDatosCapacitacion();

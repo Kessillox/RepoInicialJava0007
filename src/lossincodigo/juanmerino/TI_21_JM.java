@@ -1,4 +1,4 @@
-package lossincodigo.JuanMerino;
+package lossincodigo.juanmerino;
 
 public class TI_21_JM {
 
