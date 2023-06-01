@@ -9,14 +9,13 @@ public class CristianIndividual19 {
 
         // Mientras frase esté vacío, se pide que ingrese un texto
         while (frase.length() == 0 ){
-            System.out.println("Ingrese una palabra o frase: ");
+            System.out.println("Ingrese una palabra o frase:");
             frase = entrada.nextLine().toLowerCase();
             if(frase.length() > 0){
                 // Creando arreglo para frase ingresada
                 char[] arreglo = new char[frase.length()];
 
                 System.out.println("Lectura de la frase caracter por caracter y desplegado en consola:");
-                System.out.println("");
 
                 // Recorriendo arreglo y mostrando caracter x caracter
                 for (int i = 0; i<frase.length(); i++){
@@ -24,7 +23,7 @@ public class CristianIndividual19 {
                     arreglo[i] = caracter;
                     System.out.println(caracter);
                 }
-                System.out.println("\n Abecedario y cantidad de veces que se repite la letra: \n");
+                System.out.println("\n Abecedario y cantidad de veces que se repite cada letra: \n");
 
                 // Abecedario
                 String abecedario = "abcdefghijklmnñopqrstuvwxyz";
@@ -35,8 +34,8 @@ public class CristianIndividual19 {
                     int contador = 0;
 
                     // comparo letras abecedario en cada letra del arreglo de la frase
-                    for(int j = 0; j < arreglo.length; j++){
-                        if (Character.toLowerCase(arreglo[j]) == letra ){
+                    for (char c : arreglo) {
+                        if (Character.toLowerCase(c) == letra) {
                             contador++;
                         }
                     }
