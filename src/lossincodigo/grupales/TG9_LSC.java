@@ -1,7 +1,7 @@
 package lossincodigo.grupales;
 import java.util.Scanner;
 
-public class TG9_LSC() {
+public class TG9_LSC {
     private String rutEmpresa;
     private String nombreEmpresa;
     private String direccionEmpresa;
