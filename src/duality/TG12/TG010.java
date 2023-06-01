@@ -1,6 +1,6 @@
-package duality;
+package duality.TG12;
 import java.util.Scanner;
-public class TG10Duality {
+public class TG010 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -67,4 +67,5 @@ public class TG10Duality {
         System.out.println("Nota más baja: " + notaMasBaja);
 
     }
+
 }
