@@ -1,6 +1,29 @@
 package duality.tg12;
 import java.util.Scanner;
+/**
+ * @autor Jonathan Gajardo, Valentin Urrea, Natalia Perez
+ * @version 1.0
+ * @see https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html
+ * Clase TG09, contiene variables y el metodo main de invocacion
+* */
 public class TG09 {
+    /**
+     * @var id
+     * @var rut
+     * @var nombreEmpresa
+     * @var direccion
+     * @var telefono
+     * @var nombreUsuario
+     * @var run
+     * @var fecha
+     * @var hora
+     * @var lugar
+     * @var duracionHoras
+     * @var cantidadAsistentes
+     * @var edad
+     * Variables pedidas por consola al usuario, para su posterior utilizacion en el programa. Con los datos
+     * ingresados se realizan operaciones las que lueguen seran imprimidas por pantalla.
+     * */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

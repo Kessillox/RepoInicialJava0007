@@ -1,5 +1,10 @@
 package duality.tg12;
 import java.util.Scanner;
+/**
+ * @autor Jonathan Gajardo, Valentin Urrea, Natalia Perez
+ * @version 1.0
+ * Clase TG10, contiene variables y el metodo main de invocacion
+ * */
 public class TG010 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
