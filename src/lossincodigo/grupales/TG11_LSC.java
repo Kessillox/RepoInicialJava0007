@@ -1,7 +1,5 @@
 package lossincodigo.grupales;
 
-import lossincodigo.grupales.grupal12.Clase11.Ejemplo2;
-
 /**
  * Clase del ejercicio grupal 11 reescrita para aplicar buenas prácticas y convenciones.
  */
@@ -44,7 +42,7 @@ public class TG11_LSC {
                 + "atconsequatenim.Orcivariusnatoquepenatibusetmagnisdisparturientmontes,nascetur"
                 + "ridiculusmus.Donecsitametultriciesdui.Donecaliquetrhoncusvelitet";
         int ola = 10;
-        Ejemplo2 example = new Ejemplo2(mensaje, ola);
+        TG11_LSC example = new TG11_LSC(mensaje, ola);
         example.runExample();
     }
 
