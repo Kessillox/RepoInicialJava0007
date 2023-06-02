@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17a11a32-5b42-4108-b2eb-477155646392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loscomputines/grupal12m4/grupal09/AsistenteCapacitacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loscomputines/grupal12m4/grupal09/CapacitacionComputines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loscomputines/grupal12m4/grupal09/CentroCapacitacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loscomputines/grupal12m4/grupal09/EmpresaCapacitacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loscomputines/grupal12m4/grupal09/InstanciaCapacitacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loscomputines/grupal12m4/grupal10/grupal10computines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loscomputines/grupal12m4/grupal11/Ejempl02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2QbipJjxWUu6bC4w5UdUbrZPGlk" />
@@ -28,9 +36,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Nico/Desktop/Curso de java full stack/Primera Clase/RepoInicialJava0007/src/loscomputines/grupal12m4"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nico\Desktop\Curso de java full stack\Primera Clase\RepoInicialJava0007\src\loscomputines\grupal12m4" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="loscomputines.grupal12m4" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
