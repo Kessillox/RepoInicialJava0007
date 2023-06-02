@@ -1,10 +1,8 @@
 package lossincodigo;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
-public class DayannaNunez {
+public class DayannaNunezE {
 
     public static void main(String[] args) {
         String cadena;

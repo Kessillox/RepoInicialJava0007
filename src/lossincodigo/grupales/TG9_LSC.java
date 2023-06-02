@@ -1,25 +1,7 @@
-package lossincodigo.tg12lossincodigo.grupal9;
+package lossincodigo.grupales;
 import java.util.Scanner;
 
-/**
- * @author Rodrigo Chandia
- * @version 1.0
- * @grupo Los Sin Código
- */
 public class TG9_LSC {
-    /**
-     * @param rutEmpresa Variable que almacena el rut de la empresa. Debe ser ingresada por el usuario.
-     * @param nombreEmpresa Variable que almacena nombre de la empresa.
-     * @param direccionEmpresa Variable que almacena la dirección de la empresa.
-     * @param telefonoContacto Variable que almacena el telefono de contacto de la empresa.
-     * @param nombreUsuarioCliente Variable que almacena el nombre de usuario del cliente.
-     * @param runUsuarioCliente Variable que almacena el run del cliente.
-     * @param diaCapacitacion Variable que almacena el día de la capacitación.
-     * @param horaCapacitacion Variable que almacena la hora de la capacitación
-     * @param lugarCapacitacion Variable que almacena el lugar de la capacitación.
-     * @param duracionCapacitacion Variable que almacena la duración de la capacitación.
-     * @param cantidadAsistentes Variable que almacena la cantidad de asistentes a la capacitación.
-     */
     private String rutEmpresa;
     private String nombreEmpresa;
     private String direccionEmpresa;
@@ -32,10 +14,6 @@ public class TG9_LSC {
     private int duracionCapacitacion;
     private int cantidadAsistentes;
 
-    /**
-     * Solicita la información de las capacitaciones al usuario con Scanner.
-     * Cada información está almacenada en su variable correspondiente.
-     */
     public void ingresarDatosCapacitacion() {
         Scanner scanner = new Scanner(System.in);
 
@@ -85,12 +63,6 @@ public class TG9_LSC {
     }
 
     public void ingresarDatosAsistentes() {
-        /**
-         * Función que solicita la información de cada asistente y los contabiliza dependiendo de la edad.
-         * @param contadorMenores25 Variable que lleva el conteo de asistentes menores de 25 años.
-         * @param contador26a35 Variable que lleva el conteo de asistentes entre 26 y 35 años.
-         * @param contadorMayores35 Variable que lleva el conteo de asistentes mayores a 35 años.
-         */
         Scanner scanner = new Scanner(System.in);
 
         int contadorMenores25 = 0;
@@ -127,9 +99,6 @@ public class TG9_LSC {
     }
 
     public void mostrarDatosCapacitacion() {
-        /**
-         * Función para imprimir en consola la información de la capacitación y el cliente/usuario.
-         */
         System.out.println("Datos de la empresa:");
         System.out.println("RUT: " + rutEmpresa);
         System.out.println("Nombre: " + nombreEmpresa);
@@ -147,13 +116,6 @@ public class TG9_LSC {
     }
 
     private boolean validarFecha(String fecha) {
-        /**
-         * Función que valida la fecha de la capacitación ingresada por el cliente/usuario.
-         * @param dia convierte el día de la fecha en int.
-         * @param mes convierte el mes de la fecha en int.
-         * @param anio convierte el año de la fecha en int.
-         * @return true si la fecha fue ingresada correctamente, false en caso contrario.
-         */
         try {
             String[] partesFecha = fecha.split("/");
             int dia = Integer.parseInt(partesFecha[0]);
@@ -171,11 +133,6 @@ public class TG9_LSC {
     }
 
     private boolean esNumero(String valor) {
-        /**
-         * Función que valida que la edad ingresada de cada asistente sea un número.
-         * @param valor variable temporal que se usa para validad que sea número.
-         * @return true si el valor es numérico, false en caso contrario.
-         */
         try {
             Integer.parseInt(valor);
         } catch (NumberFormatException e) {
@@ -186,6 +143,7 @@ public class TG9_LSC {
 
     public static void main(String[] args) {
         TG9_LSC programa = new TG9_LSC();
+
         programa.ingresarDatosCapacitacion();
         programa.ingresarDatosAsistentes();
         programa.mostrarDatosCapacitacion();

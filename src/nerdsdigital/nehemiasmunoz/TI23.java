@@ -2,7 +2,8 @@ package nerdsdigital.nehemiasmunoz;
 
 import javax.swing.JOptionPane;
 
-public class TI23 {
+public class
+TI23 {
 
     public static void main(String[] args) throws Exception {
         String cadena;
