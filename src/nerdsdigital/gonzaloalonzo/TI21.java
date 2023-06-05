@@ -1,6 +1,6 @@
-package nerdsdigital;
+package nerdsdigital.gonzaloalonzo;
 
-public class TI21Manuel {
+public class TI21 {
 
 /*package Clase11; //Debe iniciar con minúscula.
 public class _EJemplO1 { //No puede empezar con guion bajo, y solo la primera letra en mayúscula a no ser que exista otra palabra.
