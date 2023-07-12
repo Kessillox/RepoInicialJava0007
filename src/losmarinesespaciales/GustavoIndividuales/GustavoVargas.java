@@ -1,4 +1,4 @@
-package losmarinesespaciales;
+package losmarinesespaciales.GustavoIndividuales;
 
 import java.util.Scanner;
 
